@@ -1,4 +1,4 @@
-// Картинки и README на всех языках в стиле Okto Calc: чёрный фон, свечения и оранжевый акцент иконки Budila,
+// Картинки и README на всех языках в стиле Okto Calc: тёплый тёмный фон и оранжевый акцент Budila,
 // шрифты Golos Text и JetBrains Mono из app/src/main/res/font (урезаются под каждый язык).
 // Тексты картинок — strings.json, тексты README — md.json. Запуск: cd tools/readme && npm install && node build.mjs
 // Скриншоты для screens-*.svg лежат в tools/readme/screens/ (372 px — вдвое больше размера показа),
@@ -15,11 +15,11 @@ const OUT = path.join(REPO, 'assets/readme');
 const STR = JSON.parse(fs.readFileSync(path.join(DIR, 'strings.json'), 'utf8'));
 const MD = JSON.parse(fs.readFileSync(path.join(DIR, 'md.json'), 'utf8'));
 
-const O = '#FF7A1A';
+const O = '#FFAC4A';
 const K = createKit({
   golos: path.join(REPO, 'app/src/main/res/font/golos_text.ttf'),
   mono: path.join(REPO, 'app/src/main/res/font/jetbrains_mono.ttf'),
-  accent: { hi: O, grad: ['#FFB27A', '#FF6A00'], on: '#1F0B00', glow: '#FF6A00', glow2: '#FF375F' },
+  accent: { hi: O, grad: ['#FFD675', '#FF8B30'], on: '#1F0B00', glow: '#FF8A38', glow2: '#ED6237', glowOpacity: 0.32 },
 });
 const { P, T, card, chip, sectionHead, badge, lines, wrap, one, fitSize, fitText, delay, svg } = K;
 const flat = (s) => String(s).replace(/\n/g, ' ');
@@ -55,12 +55,12 @@ ${lines(x + 20, y + 56, d, { size: 13, weight: 500, lh: 18, fill: P.muted })}</g
 <circle class="blink" cx="${cx + 24}" cy="${cy + 30}" r="4" fill="${O}"/>
 ${fitText(cx + 36, cy + 34, h.ring, 160, { size: 10, weight: 600, mono: true, spacing: 1.6, fill: P.dim })}
 <circle class="ring" cx="${cx + 226}" cy="${cy + 30}" r="8" fill="none" stroke="${O}" stroke-width="2"/><circle cx="${cx + 226}" cy="${cy + 30}" r="8" fill="${O}"/>
-<rect x="${cx + 18}" y="${cy + 54}" width="216" height="96" rx="12" fill="#0A0A0A" stroke="#1F1F1F"/>
+<rect x="${cx + 18}" y="${cy + 54}" width="216" height="96" rx="12" fill="#170D09" stroke="${P.stroke}"/>
 <text class="m" x="${cx + 126}" y="${cy + 122}" text-anchor="middle" font-size="56" font-weight="700" letter-spacing="-2" fill="#fff" fill-opacity=".05">${T('88:88')}</text>
 <text class="m" x="${cx + 126}" y="${cy + 122}" text-anchor="middle" font-size="56" font-weight="700" letter-spacing="-2" fill="url(#tg)">${T('07')}<tspan class="blink">${T(':')}</tspan>${T('30')}</text>
 ${fitText(cx + 22, cy + 176, h.alarm, 210, { size: 14, weight: 600, fill: '#D6D6D6' })}
 <rect x="${cx + 18}" y="${cy + 196}" width="130" height="40" rx="12" fill="${O}"/>${fitText(cx + 83, cy + 221, h.off, 116, { size: 13, weight: 700, fill: '#1F0B00', anchor: 'middle' })}
-<rect x="${cx + 156}" y="${cy + 196}" width="78" height="40" rx="12" fill="#161616" stroke="#333"/>${fitText(cx + 195, cy + 221, h.snooze, 66, { size: 13, weight: 600, anchor: 'middle' })}</g>`;
+<rect x="${cx + 156}" y="${cy + 196}" width="78" height="40" rx="12" fill="#422517" stroke="${P.stroke}"/>${fitText(cx + 195, cy + 221, h.snooze, 66, { size: 13, weight: 600, anchor: 'middle' })}</g>`;
   return svg(880, H, h.alt, b + `<style>${RING}</style>`);
 }
 
@@ -104,11 +104,11 @@ ${fitText(x + 20, y + 110, sub, cw - 36, { size: 13, weight: 500, fill: P.muted 
     p += fitText(px + 52, yy, s, pw - 74, { size: 14, weight: 500, fill: '#E6E6E6' });
   });
   const ly = y0 + 62 + q.yes.length * 30 - 8;
-  p += `<line x1="${px + 22}" y1="${ly}" x2="${px + pw - 22}" y2="${ly}" stroke="#262626"/>`;
+  p += `<line x1="${px + 22}" y1="${ly}" x2="${px + pw - 22}" y2="${ly}" stroke="${P.stroke}"/>`;
   const colW = (pw - 44) / 2;
   q.no.forEach((s, i) => {
     const xx = px + 22 + (i % 2) * colW, yy = ly + 30 + Math.floor(i / 2) * 28;
-    p += `<circle cx="${xx + 10}" cy="${yy - 5}" r="8.5" fill="none" stroke="#3a3a3a"/><path d="M${xx + 6.8} ${yy - 8.2}l6.4 6.4m0-6.4-6.4 6.4" stroke="#6E6E6E" stroke-width="1.5" stroke-linecap="round"/>`;
+    p += `<circle cx="${xx + 10}" cy="${yy - 5}" r="8.5" fill="none" stroke="${P.stroke}"/><path d="M${xx + 6.8} ${yy - 8.2}l6.4 6.4m0-6.4-6.4 6.4" stroke="${P.dim}" stroke-width="1.5" stroke-linecap="round"/>`;
     p += fitText(xx + 28, yy, s, colW - 34, { size: 13, weight: 500, fill: P.dim });
   });
   b += `<g class="r" ${delay(4)}>${p}</g>`;
@@ -170,7 +170,7 @@ function screens(t) {
     defs += `<clipPath id="c${i}"><rect x="${x}" y="40" width="180" height="387" rx="24"/></clipPath>`;
     const lbl = s.labels[ORDER[i]];
     const c = chip(0, 0, lbl, { upper: false });
-    b += `<g class="r" ${delay(1 + i)}><rect x="${x - 7}" y="33" width="194" height="401" rx="30" fill="#111" stroke="#2e2e2e"/>
+    b += `<g class="r" ${delay(1 + i)}><rect x="${x - 7}" y="33" width="194" height="401" rx="30" fill="#2C1912" stroke="${P.stroke}"/>
 <image x="${x}" y="40" width="180" height="387" preserveAspectRatio="xMidYMin slice" clip-path="url(#c${i})" href="data:image/jpeg;base64,${shots[i]}"/>
 <rect x="${x + 70}" y="48" width="40" height="10" rx="5" fill="#000"/>
 ${chip(x + 90 - c.w / 2, 452, lbl, { upper: false }).s}</g>`;
