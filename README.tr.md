@@ -4,7 +4,7 @@
 
 <br>
 
-<picture><source srcset="assets/readme/hero-tr.svg?v=9d56924d44ea"><img src="assets/readme/png/hero-tr.png" width="100%" alt="Budila — Zamanında uyan. Kolayca kalk."></picture>
+<picture><source srcset="assets/readme/hero-tr.svg?v=2d07b23ab8d1"><img src="assets/readme/png/hero-tr.png" width="100%" alt="Budila — Zamanında uyan. Kolayca kalk."></picture>
 
 <a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-tr.svg?v=683d58fde0e2" height="52" alt="APK'yı indir"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-tr.svg?v=9fe4247e770d" height="52" alt="Yenilikler"></a>
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="assets/readme/screens-tr.svg?v=aae129614059"><img src="assets/readme/png/screens-tr.png" width="100%" alt="Budila ekranları: etiketler ve renkler, özel tema, çalan alarm, koyu tema"></picture>
+<picture><source srcset="assets/readme/screens-tr.svg?v=fbf6d6f614e7"><img src="assets/readme/png/screens-tr.png" width="100%" alt="Budila ekranları: etiketler ve renkler, özel tema, çalan alarm, koyu tema"></picture>
 
 <br>
 
-<picture><source srcset="assets/readme/features-tr.svg?v=3dda50470d43"><img src="assets/readme/png/features-tr.png" width="100%" alt="Budila neler yapabilir"></picture>
+<picture><source srcset="assets/readme/features-tr.svg?v=b1d47282c358"><img src="assets/readme/png/features-tr.png" width="100%" alt="Budila neler yapabilir"></picture>
 
 <details>
 <summary><b>Özellikler hakkında daha fazlası</b></summary>
@@ -59,7 +59,7 @@ Alarmlar sistemin `AlarmClock` hizmetiyle kurulur ve telefon uykudayken bile zam
 
 <br>
 
-<picture><source srcset="assets/readme/quality-tr.svg?v=39ace54e49ba"><img src="assets/readme/png/quality-tr.png" width="100%" alt="Rakamlarla kalite"></picture>
+<picture><source srcset="assets/readme/quality-tr.svg?v=38d63bc57b81"><img src="assets/readme/png/quality-tr.png" width="100%" alt="Rakamlarla kalite"></picture>
 
 <details>
 <summary><b>Kurulum</b></summary>

@@ -4,7 +4,7 @@
 
 <br>
 
-<picture><source srcset="assets/readme/hero-es.svg?v=484aae62a161"><img src="assets/readme/png/hero-es.png" width="100%" alt="Budila — Despierta a tiempo. Levántate sin esfuerzo."></picture>
+<picture><source srcset="assets/readme/hero-es.svg?v=50cb504314c3"><img src="assets/readme/png/hero-es.png" width="100%" alt="Budila — Despierta a tiempo. Levántate sin esfuerzo."></picture>
 
 <a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-es.svg?v=90a30dda6863" height="52" alt="Descargar APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-es.svg?v=3a038331e7b2" height="52" alt="Novedades"></a>
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="assets/readme/screens-es.svg?v=3a043652aa5c"><img src="assets/readme/png/screens-es.png" width="100%" alt="Pantallas de Budila: etiquetas y colores, tema propio, alarma sonando, tema oscuro"></picture>
+<picture><source srcset="assets/readme/screens-es.svg?v=4ff5d7aed5a2"><img src="assets/readme/png/screens-es.png" width="100%" alt="Pantallas de Budila: etiquetas y colores, tema propio, alarma sonando, tema oscuro"></picture>
 
 <br>
 
-<picture><source srcset="assets/readme/features-es.svg?v=06bad8d9bc54"><img src="assets/readme/png/features-es.png" width="100%" alt="Lo que sabe hacer Budila"></picture>
+<picture><source srcset="assets/readme/features-es.svg?v=3184430c663b"><img src="assets/readme/png/features-es.png" width="100%" alt="Lo que sabe hacer Budila"></picture>
 
 <details>
 <summary><b>Más sobre las funciones</b></summary>
@@ -59,7 +59,7 @@ Las alarmas se programan con el `AlarmClock` del sistema y suenan a su hora aunq
 
 <br>
 
-<picture><source srcset="assets/readme/quality-es.svg?v=ae5a1f88f4e8"><img src="assets/readme/png/quality-es.png" width="100%" alt="Calidad en cifras"></picture>
+<picture><source srcset="assets/readme/quality-es.svg?v=93fcf769a0dc"><img src="assets/readme/png/quality-es.png" width="100%" alt="Calidad en cifras"></picture>
 
 <details>
 <summary><b>Instalación</b></summary>

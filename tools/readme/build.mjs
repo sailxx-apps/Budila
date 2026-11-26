@@ -20,7 +20,7 @@ const O = '#FF9A46';
 const K = createKit({
   golos: path.join(REPO, 'app/src/main/res/font/golos_text.ttf'),
   mono: path.join(REPO, 'app/src/main/res/font/jetbrains_mono.ttf'),
-  accent: { hi: O, grad: ['#FFB46B', '#F88635'], on: '#1F0B00', glow: '#FF8A38', glow2: '#F88635', glowOpacity: 0.20 },
+  accent: { hi: O, grad: ['#FFB46B', '#F88635'], on: '#1F0B00', glow: '#FF8A38', glow2: '#F88635', glowOpacity: 0.14 },
 });
 const { P, T, card, chip, sectionHead, badge, lines, wrap, one, fitSize, fitText, delay, svg } = K;
 const flat = (s) => String(s).replace(/\n/g, ' ');
@@ -37,7 +37,7 @@ function hero(t) {
   const h = t.hero;
   let b = `<g class="r">${logo(40, 36, 36)}<text x="88" y="62" font-size="24" font-weight="800" letter-spacing="-.4">${T('Budila')}</text></g>`;
   const ts = fitSize([h.h1, h.h2], 500, 40, 800);
-  b += `<g class="r" ${delay(2)}>${lines(40, 146, [one(h.h1), one(h.h2)], { size: ts, weight: 800, lh: 48, spacing: '-1' })}</g>`;
+  b += `<g class="r" ${delay(2)}>${lines(40, 146, [one(h.h1), one(h.h2)], { size: ts, weight: 800, lh: 48, spacing: '-1', hiFill: P.cardAccent })}</g>`;
   const sub = wrap(h.sub, 520, 16, 500);
   b += `<g class="r" ${delay(3)}>${lines(40, 232, sub, { size: 16, weight: 500, lh: 24, fill: P.muted })}</g>`;
   const top = 232 + (sub.length - 1) * 24 + 40;
@@ -56,7 +56,7 @@ ${lines(x + 20, y + 56, d, { size: 13, weight: 500, lh: 18, fill: P.cardMuted })
 <circle class="blink" cx="${cx + 24}" cy="${cy + 30}" r="4" fill="${O}"/>
 ${fitText(cx + 36, cy + 34, h.ring, 160, { size: 10, weight: 600, mono: true, spacing: 1.6, fill: P.cardMuted })}
 <circle class="ring" cx="${cx + 226}" cy="${cy + 30}" r="8" fill="none" stroke="${O}" stroke-width="2"/><circle cx="${cx + 226}" cy="${cy + 30}" r="8" fill="${O}"/>
-<rect x="${cx + 18}" y="${cy + 54}" width="216" height="96" rx="12" fill="#121212" stroke="${P.stroke}"/>
+<rect x="${cx + 18}" y="${cy + 54}" width="216" height="96" rx="12" fill="#121212" stroke="${P.cardStroke}"/>
 <text class="m" x="${cx + 126}" y="${cy + 122}" text-anchor="middle" font-size="56" font-weight="700" letter-spacing="-2" fill="#fff" fill-opacity=".05">${T('88:88')}</text>
 <text class="m" x="${cx + 126}" y="${cy + 122}" text-anchor="middle" font-size="56" font-weight="700" letter-spacing="-2" fill="url(#tg)">${T('07')}<tspan class="blink">${T(':')}</tspan>${T('30')}</text>
 ${fitText(cx + 22, cy + 176, h.alarm, 210, { size: 14, weight: 600, fill: P.cardInk })}

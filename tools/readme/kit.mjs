@@ -1,4 +1,4 @@
-// Общий стиль плашек README в духе Okto Calc: чёрный фон, мягкие свечения цвета проекта,
+// Общий стиль плашек README в духе Okto Calc: светлый фон, мягкие свечения цвета проекта,
 // градиентные акценты, шрифты Golos Text и JetBrains Mono (урезаются под каждый язык).
 // Ширина текста меряется по самому шрифту, поэтому переносы работают на любом языке.
 import fs from 'node:fs';
@@ -26,7 +26,7 @@ export function createKit({ golos, mono, accent }) {
   const T = (s) => { allText += s; return esc(s); };
 
   const P = {
-    ink: '#FFFFFF', muted: '#D6D6D6', dim: '#B8B8B8', stroke: '#5B514A',
+    ink: '#FFFFFF', muted: '#4F3D31', dim: '#604C3D', stroke: '#CDB19A',
     cardInk: '#221913', cardMuted: '#58514B', cardStroke: '#DED7D0', cardAccent: '#A84405',
   };
 
@@ -77,11 +77,11 @@ export function createKit({ golos, mono, accent }) {
   const spans = (line, hiFill = 'url(#tg)') => line.map(([s, hi]) => `<tspan${hi ? ` fill="${hiFill}"` : ''}>${T(s)}</tspan>`).join('');
 
   /** Блок текста: строки из wrap(). */
-  function lines(x, y, ls, { size, weight = 500, lh = size * 1.4, fill = P.ink, mono = false, spacing, anchor, hiFill } = {}) {
+  function lines(x, y, ls, { size, weight = 500, lh = size * 1.4, fill = P.cardInk, mono = false, spacing, anchor, hiFill } = {}) {
     return ls.map((l, i) => `<text${mono ? ' class="m"' : ''} x="${x}" y="${(y + i * lh).toFixed(1)}" font-size="${size}" font-weight="${weight}"${spacing ? ` letter-spacing="${spacing}"` : ''}${anchor ? ` text-anchor="${anchor}"` : ''} fill="${fill}">${spans(l, hiFill)}</text>`).join('\n');
   }
   /** Одна строка, ужатая до maxW: если не влезает — уменьшается кегль. */
-  function fitText(x, y, s, maxW, { size, weight = 500, fill = P.ink, hiFill, mono = false, spacing = 0, anchor, cls } = {}) {
+  function fitText(x, y, s, maxW, { size, weight = 500, fill = P.cardInk, hiFill, mono = false, spacing = 0, anchor, cls } = {}) {
     let sz = size;
     while (sz > size * 0.6 && width(s, sz, weight, { mono, ls: spacing }) > maxW) sz -= 0.5;
     const c = [mono ? 'm' : '', cls || ''].filter(Boolean).join(' ');
@@ -99,7 +99,7 @@ export function createKit({ golos, mono, accent }) {
 
   const fontCss = (fg, fm) => `@font-face{font-family:"G";src:url(data:font/woff2;base64,${fg}) format("woff2");font-weight:100 900}
 @font-face{font-family:"M";src:url(data:font/woff2;base64,${fm}) format("woff2");font-weight:100 900}
-svg{fill:#fff}
+svg{fill:${P.cardInk}}
 text{font-family:"G","Segoe UI",system-ui,sans-serif}
 .m{font-family:"M",ui-monospace,Consolas,monospace}`;
 
@@ -124,7 +124,7 @@ ${fontCss(fg, fm)}
 <radialGradient id="g2" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="${A.glow2}" stop-opacity=".08"/><stop offset="1" stop-color="${A.glow2}" stop-opacity="0"/></radialGradient>
 <linearGradient id="cg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${P.ink}"/><stop offset="1" stop-color="#F7F3EF"/></linearGradient>
 <linearGradient id="tg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="${A.grad[0]}"/><stop offset="1" stop-color="${A.grad[1]}"/></linearGradient>
-<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#282522"/><stop offset="1" stop-color="#191817"/></linearGradient>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F5E9DE"/><stop offset="1" stop-color="#EBD8C8"/></linearGradient>
 <linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".07"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
 <clipPath id="clip"><rect width="${w}" height="${h}" rx="24"/></clipPath>
 </defs>`;
@@ -164,7 +164,7 @@ ${fontCss(fg, fm)}
     const ls = wrap(title, maxW, size, 800);
     const lh = size * 1.2;
     const s = `<g class="r">${c.s}</g>
-<g class="r" ${delay(1)}>${lines(x, 104, ls, { size, weight: 800, lh, spacing: '-.6' })}</g>`;
+<g class="r" ${delay(1)}>${lines(x, 104, ls, { size, weight: 800, lh, spacing: '-.6', hiFill: P.cardAccent })}</g>`;
     return { s, y: 104 + (ls.length - 1) * lh + 28 };
   }
 

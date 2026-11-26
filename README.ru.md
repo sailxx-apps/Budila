@@ -4,7 +4,7 @@
 
 <br>
 
-<picture><source srcset="assets/readme/hero-ru.svg?v=71a87a2230f4"><img src="assets/readme/png/hero-ru.png" width="100%" alt="Budila — Просыпайся вовремя. Вставай легко."></picture>
+<picture><source srcset="assets/readme/hero-ru.svg?v=924a1c9f8ff1"><img src="assets/readme/png/hero-ru.png" width="100%" alt="Budila — Просыпайся вовремя. Вставай легко."></picture>
 
 <a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-ru.svg?v=440c896534c5" height="52" alt="Скачать APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-ru.svg?v=d5b38a72d028" height="52" alt="Что нового"></a>
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="assets/readme/screens-ru.svg?v=f7aab8402abb"><img src="assets/readme/png/screens-ru.png" width="100%" alt="Экраны Budila: теги и цвета, своя тема, звонок, тёмная тема"></picture>
+<picture><source srcset="assets/readme/screens-ru.svg?v=2f40dc7183fd"><img src="assets/readme/png/screens-ru.png" width="100%" alt="Экраны Budila: теги и цвета, своя тема, звонок, тёмная тема"></picture>
 
 <br>
 
-<picture><source srcset="assets/readme/features-ru.svg?v=aae4da334ac5"><img src="assets/readme/png/features-ru.png" width="100%" alt="Что умеет Budila"></picture>
+<picture><source srcset="assets/readme/features-ru.svg?v=faecfefba831"><img src="assets/readme/png/features-ru.png" width="100%" alt="Что умеет Budila"></picture>
 
 <details>
 <summary><b>Подробнее о возможностях</b></summary>
@@ -59,7 +59,7 @@
 
 <br>
 
-<picture><source srcset="assets/readme/quality-ru.svg?v=2f27364a9f21"><img src="assets/readme/png/quality-ru.png" width="100%" alt="Качество в цифрах"></picture>
+<picture><source srcset="assets/readme/quality-ru.svg?v=2e69ef9aa296"><img src="assets/readme/png/quality-ru.png" width="100%" alt="Качество в цифрах"></picture>
 
 <details>
 <summary><b>Установка</b></summary>
