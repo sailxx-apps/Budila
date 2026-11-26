@@ -4,9 +4,9 @@
 
 <br>
 
-<picture><source srcset="assets/readme/hero-it.svg"><img src="assets/readme/png/hero-it.png" width="100%" alt="Budila — Svegliati in orario. Alzati senza fatica."></picture>
+<picture><source srcset="=e778cbf51ef4"><img src="assets/readme/png/hero-it.png" width="100%" alt="Budila — Svegliati in orario. Alzati senza fatica."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-it.svg" height="52" alt="Scarica l’APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-it.svg" height="52" alt="Novità"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="=e13b6c53daab" height="52" alt="Scarica l’APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="=20f6e50098a5" height="52" alt="Novità"></a>
 
 **Budila è una sveglia per Android che ti sveglia in orario, senza stress.** Risveglio dolce, tag e colori, il design esclusivo «Strumento» e 8 temi Material You. Nessun accesso a internet, niente pubblicità né tracker.
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="assets/readme/screens-it.svg"><img src="assets/readme/png/screens-it.png" width="100%" alt="Schermate di Budila: tag e colori, tema personale, sveglia che suona, tema scuro"></picture>
+<picture><source srcset="=c865dfcf628d"><img src="assets/readme/png/screens-it.png" width="100%" alt="Schermate di Budila: tag e colori, tema personale, sveglia che suona, tema scuro"></picture>
 
 <br>
 
-<picture><source srcset="assets/readme/features-it.svg"><img src="assets/readme/png/features-it.png" width="100%" alt="Cosa sa fare Budila"></picture>
+<picture><source srcset="=eb44696b2061"><img src="assets/readme/png/features-it.png" width="100%" alt="Cosa sa fare Budila"></picture>
 
 <details>
 <summary><b>Di più sulle funzioni</b></summary>
@@ -59,7 +59,7 @@ Le sveglie passano per l’`AlarmClock` di sistema e suonano puntuali anche quan
 
 <br>
 
-<picture><source srcset="assets/readme/quality-it.svg"><img src="assets/readme/png/quality-it.png" width="100%" alt="La qualità in numeri"></picture>
+<picture><source srcset="=3ac15c829ded"><img src="assets/readme/png/quality-it.png" width="100%" alt="La qualità in numeri"></picture>
 
 <details>
 <summary><b>Installazione</b></summary>

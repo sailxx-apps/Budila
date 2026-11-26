@@ -5,6 +5,7 @@
 // исходники — screenshots/i2_list_dark, i6_ringing_oled, 10_list_sunset_dark, 12_custom_theme.
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { createKit, ICONS } from './kit.mjs';
 import { renderPngs } from './png.mjs';
@@ -194,7 +195,12 @@ await K.build(OUT, langs, 'Budila.:–/');
 renderPngs();
 
 // ---------- README на всех языках (тексты — md.json) ----------
-const pic = (name, code, alt) => `<picture><source srcset="assets/readme/${name}-${code}.svg"><img src="assets/readme/png/${name}-${code}.png" width="100%" alt="${alt}"></picture>`;
+function svgUrl(name, code) {
+  const file = `${name}-${code}.svg`;
+  const hash = createHash('sha256').update(fs.readFileSync(path.join(OUT, file))).digest('hex').slice(0, 12);
+  return `assets/readme/${file}?v=${hash}`;
+}
+const pic = (name, code, alt) => `<picture><source srcset="${svgUrl(name, code)}"><img src="assets/readme/png/${name}-${code}.png" width="100%" alt="${alt}"></picture>`;
 const det = (summary, body) => `<details>\n<summary><b>${summary}</b></summary>\n\n${body}\n\n</details>`;
 for (const [code, m] of Object.entries(MD)) {
   const sw = Object.values(MD).map((x) => (x === m ? `**${x.name}**` : `[${x.name}](${x.file})`)).join(' · ');
@@ -206,7 +212,7 @@ ${sw}
 
 ${pic('hero', code, m.heroAlt)}
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-${code}.svg" height="52" alt="${m.ctaAlt}"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-${code}.svg" height="52" alt="${m.whatsNew}"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="${svgUrl('cta', code)}" height="52" alt="${m.ctaAlt}"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="${svgUrl('btn-new', code)}" height="52" alt="${m.whatsNew}"></a>
 
 ${m.intro}
 

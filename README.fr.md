@@ -4,9 +4,9 @@
 
 <br>
 
-<picture><source srcset="assets/readme/hero-fr.svg"><img src="assets/readme/png/hero-fr.png" width="100%" alt="Budila — Réveille-toi à l’heure. Lève-toi en douceur."></picture>
+<picture><source srcset="=74cfe201c08a"><img src="assets/readme/png/hero-fr.png" width="100%" alt="Budila — Réveille-toi à l’heure. Lève-toi en douceur."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-fr.svg" height="52" alt="Télécharger l’APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-fr.svg" height="52" alt="Nouveautés"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="=935a890731fb" height="52" alt="Télécharger l’APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="=929d8c15021b" height="52" alt="Nouveautés"></a>
 
 **Budila est un réveil pour Android qui vous réveille à l’heure, sans stress.** Réveil en douceur, étiquettes et couleurs, le design maison « Instrument » et 8 thèmes Material You. Sans accès à Internet, sans publicité ni traceurs.
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="assets/readme/screens-fr.svg"><img src="assets/readme/png/screens-fr.png" width="100%" alt="Écrans de Budila : étiquettes et couleurs, thème perso, sonnerie, thème sombre"></picture>
+<picture><source srcset="=17f824129c44"><img src="assets/readme/png/screens-fr.png" width="100%" alt="Écrans de Budila : étiquettes et couleurs, thème perso, sonnerie, thème sombre"></picture>
 
 <br>
 
-<picture><source srcset="assets/readme/features-fr.svg"><img src="assets/readme/png/features-fr.png" width="100%" alt="Ce que sait faire Budila"></picture>
+<picture><source srcset="=47eaf48ea427"><img src="assets/readme/png/features-fr.png" width="100%" alt="Ce que sait faire Budila"></picture>
 
 <details>
 <summary><b>En savoir plus sur les fonctionnalités</b></summary>
@@ -59,7 +59,7 @@ Les alarmes passent par l’`AlarmClock` du système et sonnent à l’heure mê
 
 <br>
 
-<picture><source srcset="assets/readme/quality-fr.svg"><img src="assets/readme/png/quality-fr.png" width="100%" alt="La qualité en chiffres"></picture>
+<picture><source srcset="=4ea35640b67e"><img src="assets/readme/png/quality-fr.png" width="100%" alt="La qualité en chiffres"></picture>
 
 <details>
 <summary><b>Installation</b></summary>

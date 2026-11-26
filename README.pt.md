@@ -4,9 +4,9 @@
 
 <br>
 
-<picture><source srcset="assets/readme/hero-pt.svg"><img src="assets/readme/png/hero-pt.png" width="100%" alt="Budila — Acorde na hora. Levante sem esforço."></picture>
+<picture><source srcset="=0dc37c5f8ca3"><img src="assets/readme/png/hero-pt.png" width="100%" alt="Budila — Acorde na hora. Levante sem esforço."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-pt.svg" height="52" alt="Baixar APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-pt.svg" height="52" alt="Novidades"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="=272f5a9b2d2b" height="52" alt="Baixar APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="=5ed900ce6ad2" height="52" alt="Novidades"></a>
 
 **Budila é um despertador para Android que acorda você na hora certa, sem estresse.** Despertar suave, etiquetas e cores, o design exclusivo “Instrumento” e 8 temas Material You. Sem acesso à internet, sem anúncios e sem rastreadores.
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="assets/readme/screens-pt.svg"><img src="assets/readme/png/screens-pt.png" width="100%" alt="Telas do Budila: etiquetas e cores, tema próprio, alarme tocando, tema escuro"></picture>
+<picture><source srcset="=19d7a513cd46"><img src="assets/readme/png/screens-pt.png" width="100%" alt="Telas do Budila: etiquetas e cores, tema próprio, alarme tocando, tema escuro"></picture>
 
 <br>
 
-<picture><source srcset="assets/readme/features-pt.svg"><img src="assets/readme/png/features-pt.png" width="100%" alt="O que o Budila sabe fazer"></picture>
+<picture><source srcset="=76ec62aa3937"><img src="assets/readme/png/features-pt.png" width="100%" alt="O que o Budila sabe fazer"></picture>
 
 <details>
 <summary><b>Mais sobre os recursos</b></summary>
@@ -59,7 +59,7 @@ Os alarmes são agendados pelo `AlarmClock` do sistema e tocam na hora certa mes
 
 <br>
 
-<picture><source srcset="assets/readme/quality-pt.svg"><img src="assets/readme/png/quality-pt.png" width="100%" alt="Qualidade em números"></picture>
+<picture><source srcset="=368ae9e5e38f"><img src="assets/readme/png/quality-pt.png" width="100%" alt="Qualidade em números"></picture>
 
 <details>
 <summary><b>Instalação</b></summary>

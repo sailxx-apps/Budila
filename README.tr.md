@@ -4,9 +4,9 @@
 
 <br>
 
-<picture><source srcset="assets/readme/hero-tr.svg"><img src="assets/readme/png/hero-tr.png" width="100%" alt="Budila — Zamanında uyan. Kolayca kalk."></picture>
+<picture><source srcset="=9d56924d44ea"><img src="assets/readme/png/hero-tr.png" width="100%" alt="Budila — Zamanında uyan. Kolayca kalk."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-tr.svg" height="52" alt="APK'yı indir"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-tr.svg" height="52" alt="Yenilikler"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="=683d58fde0e2" height="52" alt="APK'yı indir"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="=9fe4247e770d" height="52" alt="Yenilikler"></a>
 
 **Budila, sizi zamanında ve stressiz uyandıran bir Android çalar saatidir.** Yumuşak uyanma, etiketler ve renkler, özgün “Enstrüman” tasarımı ve 8 Material You teması. İnternet erişimi yok, reklam ve izleyici yok.
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="assets/readme/screens-tr.svg"><img src="assets/readme/png/screens-tr.png" width="100%" alt="Budila ekranları: etiketler ve renkler, özel tema, çalan alarm, koyu tema"></picture>
+<picture><source srcset="=aae129614059"><img src="assets/readme/png/screens-tr.png" width="100%" alt="Budila ekranları: etiketler ve renkler, özel tema, çalan alarm, koyu tema"></picture>
 
 <br>
 
-<picture><source srcset="assets/readme/features-tr.svg"><img src="assets/readme/png/features-tr.png" width="100%" alt="Budila neler yapabilir"></picture>
+<picture><source srcset="=3dda50470d43"><img src="assets/readme/png/features-tr.png" width="100%" alt="Budila neler yapabilir"></picture>
 
 <details>
 <summary><b>Özellikler hakkında daha fazlası</b></summary>
@@ -59,7 +59,7 @@ Alarmlar sistemin `AlarmClock` hizmetiyle kurulur ve telefon uykudayken bile zam
 
 <br>
 
-<picture><source srcset="assets/readme/quality-tr.svg"><img src="assets/readme/png/quality-tr.png" width="100%" alt="Rakamlarla kalite"></picture>
+<picture><source srcset="=39ace54e49ba"><img src="assets/readme/png/quality-tr.png" width="100%" alt="Rakamlarla kalite"></picture>
 
 <details>
 <summary><b>Kurulum</b></summary>

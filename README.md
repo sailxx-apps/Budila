@@ -4,9 +4,9 @@
 
 <br>
 
-<picture><source srcset="assets/readme/hero-en.svg"><img src="assets/readme/png/hero-en.png" width="100%" alt="Budila — Wake up on time. Get up with ease."></picture>
+<picture><source srcset="=a416882678c7"><img src="assets/readme/png/hero-en.png" width="100%" alt="Budila — Wake up on time. Get up with ease."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-en.svg" height="52" alt="Download APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-en.svg" height="52" alt="What’s new"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="=190d7b5b6b8d" height="52" alt="Download APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="=0a33eccd1e29" height="52" alt="What’s new"></a>
 
 **Budila is an Android alarm clock that wakes you on time, without the stress.** Gentle wake-up, tags and colors, the signature “Instrument” design and 8 Material You themes. No internet access, no ads, no trackers.
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="assets/readme/screens-en.svg"><img src="assets/readme/png/screens-en.png" width="100%" alt="Budila screens: tags and colors, custom theme, ringing, dark theme"></picture>
+<picture><source srcset="=2697672fea59"><img src="assets/readme/png/screens-en.png" width="100%" alt="Budila screens: tags and colors, custom theme, ringing, dark theme"></picture>
 
 <br>
 
-<picture><source srcset="assets/readme/features-en.svg"><img src="assets/readme/png/features-en.png" width="100%" alt="What Budila can do"></picture>
+<picture><source srcset="=704c2a6df277"><img src="assets/readme/png/features-en.png" width="100%" alt="What Budila can do"></picture>
 
 <details>
 <summary><b>More about the features</b></summary>
@@ -59,7 +59,7 @@ Alarms are set through the system `AlarmClock` and ring on time even when the ph
 
 <br>
 
-<picture><source srcset="assets/readme/quality-en.svg"><img src="assets/readme/png/quality-en.png" width="100%" alt="Quality in numbers"></picture>
+<picture><source srcset="=ffe7e4e14187"><img src="assets/readme/png/quality-en.png" width="100%" alt="Quality in numbers"></picture>
 
 <details>
 <summary><b>Install</b></summary>

@@ -4,9 +4,9 @@
 
 <br>
 
-<picture><source srcset="assets/readme/hero-ru.svg"><img src="assets/readme/png/hero-ru.png" width="100%" alt="Budila — Просыпайся вовремя. Вставай легко."></picture>
+<picture><source srcset="=71a87a2230f4"><img src="assets/readme/png/hero-ru.png" width="100%" alt="Budila — Просыпайся вовремя. Вставай легко."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-ru.svg" height="52" alt="Скачать APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-ru.svg" height="52" alt="Что нового"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="=440c896534c5" height="52" alt="Скачать APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="=d5b38a72d028" height="52" alt="Что нового"></a>
 
 **Budila — будильник для Android, который будит вовремя и без стресса.** Спокойное пробуждение, теги и цвета, фирменный дизайн «Инструмент» и 8 тем Material You. Работает без интернета, без рекламы и трекеров.
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="assets/readme/screens-ru.svg"><img src="assets/readme/png/screens-ru.png" width="100%" alt="Экраны Budila: теги и цвета, своя тема, звонок, тёмная тема"></picture>
+<picture><source srcset="=f7aab8402abb"><img src="assets/readme/png/screens-ru.png" width="100%" alt="Экраны Budila: теги и цвета, своя тема, звонок, тёмная тема"></picture>
 
 <br>
 
-<picture><source srcset="assets/readme/features-ru.svg"><img src="assets/readme/png/features-ru.png" width="100%" alt="Что умеет Budila"></picture>
+<picture><source srcset="=aae4da334ac5"><img src="assets/readme/png/features-ru.png" width="100%" alt="Что умеет Budila"></picture>
 
 <details>
 <summary><b>Подробнее о возможностях</b></summary>
@@ -59,7 +59,7 @@
 
 <br>
 
-<picture><source srcset="assets/readme/quality-ru.svg"><img src="assets/readme/png/quality-ru.png" width="100%" alt="Качество в цифрах"></picture>
+<picture><source srcset="=2f27364a9f21"><img src="assets/readme/png/quality-ru.png" width="100%" alt="Качество в цифрах"></picture>
 
 <details>
 <summary><b>Установка</b></summary>
