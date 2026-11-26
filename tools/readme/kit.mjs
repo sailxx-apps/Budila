@@ -179,18 +179,22 @@ ${fontCss(fg, fm)}
   function button(label, icon, { detail = '', primary = false } = {}) {
     const w = 62 + Math.ceil(Math.max(width(label, 14, 700), width(detail, 11, 600)));
     const name = detail ? `${label}, ${detail}` : label;
-    const ink = primary ? A.on : P.ink;
-    const surface = primary ? A.hi : '#222222';
-    const edge = primary ? '#291307' : '#555555';
-    const well = primary ? '#361806' : '#101010';
+    const ink = primary ? A.on : '#FFF4E9';
+    const surfaceTop = primary ? '#FFCA60' : '#723A20';
+    const surfaceBottom = primary ? '#FF8B23' : '#432119';
+    const edge = primary ? '#9D420E' : '#793F25';
+    const rim = primary ? '#FFE09A' : '#DE8850';
+    const well = primary ? '#482005' : '#31180F';
+    const iconInk = primary ? '#FFD76F' : '#FFB975';
     return (fg) => {
       const sublabel = detail ? `<text x="48" y="38" font-size="11" font-weight="600" fill="${ink}">${T(detail)}</text>` : '';
       return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="52" viewBox="0 0 ${w} 52" role="img" aria-label="${esc(name)}">
 <style>@font-face{font-family:"G";src:url(data:font/woff2;base64,${fg}) format("woff2");font-weight:100 900}text{font-family:"G","Segoe UI",system-ui,sans-serif}</style>
+<defs><linearGradient id="surface" x2="0" y2="1"><stop stop-color="${surfaceTop}"/><stop offset="1" stop-color="${surfaceBottom}"/></linearGradient></defs>
 <rect x=".5" y=".5" width="${w - 1}" height="51" rx="12" fill="${edge}"/>
-<rect x="1.5" y="1.5" width="${w - 3}" height="46" rx="10" fill="${surface}"/>
+<rect x="1.5" y="1.5" width="${w - 3}" height="46" rx="10" fill="url(#surface)" stroke="${rim}"/>
 <rect x="8" y="8" width="33" height="33" rx="7" fill="${well}"/>
-<g transform="translate(12.5 12.5)" fill="none" stroke="${A.hi}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${icon}</g>
+<g transform="translate(12.5 12.5)" fill="none" stroke="${iconInk}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${icon}</g>
 <text x="48" y="${detail ? 23 : 30}" font-size="14" font-weight="700" fill="${ink}">${T(label)}</text>
 ${sublabel}
 </svg>
