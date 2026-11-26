@@ -6,7 +6,7 @@
 
 <picture><source srcset="assets/readme/hero-en.svg?v=8026fb4fa174"><img src="assets/readme/png/hero-en.png" width="100%" alt="Budila — Wake up on time. Get up with ease."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-en.svg?v=190d7b5b6b8d" height="52" alt="Download APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-en.svg?v=0a33eccd1e29" height="52" alt="What’s new"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-en.svg?v=1ddea4184edc" height="52" alt="Download APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-en.svg?v=fd15aaf162a6" height="52" alt="What’s new"></a>
 
 **Budila is an Android alarm clock that wakes you on time, without the stress.** Gentle wake-up, tags and colors, the signature “Instrument” design and 8 Material You themes. No internet access, no ads, no trackers.
 

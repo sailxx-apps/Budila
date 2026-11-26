@@ -6,7 +6,7 @@
 
 <picture><source srcset="assets/readme/hero-de.svg?v=e659e343d339"><img src="assets/readme/png/hero-de.png" width="100%" alt="Budila — Pünktlich aufwachen. Leicht aufstehen."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-de.svg?v=a973db55037b" height="52" alt="APK herunterladen"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-de.svg?v=17a7cbebc445" height="52" alt="Neuigkeiten"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-de.svg?v=397525edf3b1" height="52" alt="APK herunterladen"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-de.svg?v=d88939cc65c5" height="52" alt="Neuigkeiten"></a>
 
 **Budila ist ein Wecker für Android, der dich pünktlich und ohne Stress weckt.** Sanftes Wecken, Tags und Farben, das eigene Design „Instrument“ und 8 Material-You-Themes. Kein Internetzugriff, keine Werbung, keine Tracker.
 

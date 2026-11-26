@@ -6,7 +6,7 @@
 
 <picture><source srcset="assets/readme/hero-tr.svg?v=2d07b23ab8d1"><img src="assets/readme/png/hero-tr.png" width="100%" alt="Budila — Zamanında uyan. Kolayca kalk."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-tr.svg?v=683d58fde0e2" height="52" alt="APK'yı indir"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-tr.svg?v=9fe4247e770d" height="52" alt="Yenilikler"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-tr.svg?v=58950d478648" height="52" alt="APK'yı indir"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-tr.svg?v=9ba11ce2736d" height="52" alt="Yenilikler"></a>
 
 **Budila, sizi zamanında ve stressiz uyandıran bir Android çalar saatidir.** Yumuşak uyanma, etiketler ve renkler, özgün “Enstrüman” tasarımı ve 8 Material You teması. İnternet erişimi yok, reklam ve izleyici yok.
 

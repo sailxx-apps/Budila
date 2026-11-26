@@ -177,27 +177,24 @@ ${fontCss(fg, fm)}
     `<rect x="${x}" y="${y}" width="${size}" height="${size}" rx="11" fill="${A.hi}" fill-opacity=".12" stroke="${A.hi}" stroke-opacity=".28"/>` +
     `<g transform="translate(${x + (size - 24) / 2} ${y + (size - 24) / 2})" fill="none" stroke="${A.hi}" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${paths}</g>`;
 
-  /** Клавиша с отдельным гнездом для иконки 24×24. */
+  /** Кнопка с иконкой 24×24 и необязательной второй строкой. */
   function button(label, icon, { detail = '', primary = false } = {}) {
-    const w = 62 + Math.ceil(Math.max(width(label, 14, 700), width(detail, 11, 600)));
+    const labelSize = 14.5;
+    const w = 62 + Math.ceil(Math.max(width(label, labelSize, 700), width(detail, 11, 600)));
     const name = detail ? `${label}, ${detail}` : label;
-    const ink = primary ? A.on : P.cardInk;
-    const surfaceTop = primary ? A.grad[0] : P.ink;
-    const surfaceBottom = primary ? A.grad[1] : '#F7F3EF';
-    const edge = primary ? '#903D10' : '#B69D89';
-    const rim = primary ? '#FFBB79' : P.cardStroke;
-    const well = primary ? '#2A170E' : '#FCE6D4';
+    const ink = primary ? P.ink : P.cardInk;
+    const surface = primary ? '#B5480B' : '#FFFCF9';
+    const border = primary ? '#9E3B07' : '#D4C0AF';
+    const well = primary ? '#9A3606' : '#F8E7DA';
     const iconInk = primary ? P.ink : P.cardAccent;
     return (fg) => {
-      const sublabel = detail ? `<text x="48" y="38" font-size="11" font-weight="600" fill="${ink}">${T(detail)}</text>` : '';
+      const sublabel = detail ? `<text x="49" y="39" font-size="11" font-weight="600" fill="${primary ? '#FFF3E9' : P.cardMuted}">${T(detail)}</text>` : '';
       return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="52" viewBox="0 0 ${w} 52" role="img" aria-label="${esc(name)}">
 <style>@font-face{font-family:"G";src:url(data:font/woff2;base64,${fg}) format("woff2");font-weight:100 900}text{font-family:"G","Segoe UI",system-ui,sans-serif}</style>
-<defs><linearGradient id="surface" x2="0" y2="1"><stop stop-color="${surfaceTop}"/><stop offset="1" stop-color="${surfaceBottom}"/></linearGradient></defs>
-<rect x=".5" y=".5" width="${w - 1}" height="51" rx="12" fill="${edge}"/>
-<rect x="1.5" y="1.5" width="${w - 3}" height="46" rx="10" fill="url(#surface)" stroke="${rim}"/>
-<rect x="8" y="8" width="33" height="33" rx="7" fill="${well}"/>
-<g transform="translate(12.5 12.5)" fill="none" stroke="${iconInk}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${icon}</g>
-<text x="48" y="${detail ? 23 : 30}" font-size="14" font-weight="700" fill="${ink}">${T(label)}</text>
+<rect x="3.5" y="2.5" width="${w - 7}" height="47" rx="11" fill="${surface}" stroke="${border}"/>
+<rect x="11" y="11" width="30" height="30" rx="7" fill="${well}"/>
+<g transform="translate(14 14)" fill="none" stroke="${iconInk}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${icon}</g>
+<text x="49" y="${detail ? 24 : 31}" font-size="${labelSize}" font-weight="700" fill="${ink}">${T(label)}</text>
 ${sublabel}
 </svg>
 `;
