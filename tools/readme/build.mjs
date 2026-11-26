@@ -1,4 +1,4 @@
-// Картинки и README на всех языках в стиле Okto Calc: графитовый фон и оранжевый акцент Budila,
+// Картинки и README на всех языках в стиле Okto Calc: белые карточки и оранжевый акцент Budila,
 // шрифты Golos Text и JetBrains Mono из app/src/main/res/font (урезаются под каждый язык).
 // Тексты картинок — strings.json, тексты README — md.json. Запуск: cd tools/readme && npm install && node build.mjs
 // Скриншоты для screens-*.svg лежат в tools/readme/screens/ (372 px — вдвое больше размера показа),
@@ -19,7 +19,7 @@ const O = '#FF9A46';
 const K = createKit({
   golos: path.join(REPO, 'app/src/main/res/font/golos_text.ttf'),
   mono: path.join(REPO, 'app/src/main/res/font/jetbrains_mono.ttf'),
-  accent: { hi: O, grad: ['#FFB46B', '#F88635'], on: '#1F0B00', glow: '#FF8A38', glow2: '#F88635', glowOpacity: 0.13 },
+  accent: { hi: O, grad: ['#FFB46B', '#F88635'], on: '#1F0B00', glow: '#FF8A38', glow2: '#F88635', glowOpacity: 0.20 },
 });
 const { P, T, card, chip, sectionHead, badge, lines, wrap, one, fitSize, fitText, delay, svg } = K;
 const flat = (s) => String(s).replace(/\n/g, ' ');
@@ -45,22 +45,22 @@ function hero(t) {
   tiles.forEach(([a, d], i) => {
     const x = 40 + (i % 2) * 262, y = top + Math.floor(i / 2) * (th + 12);
     b += `<g class="r" ${delay(4 + i)}>${card(x, y, 250, th)}<circle cx="${x + 22}" cy="${y + 27}" r="4" fill="${O}"/>
-${fitText(x + 34, y + 32, a, 200, { size: 16, weight: 700 })}
-${lines(x + 20, y + 56, d, { size: 13, weight: 500, lh: 18, fill: P.muted })}</g>`;
+${fitText(x + 34, y + 32, a, 200, { size: 16, weight: 700, fill: P.cardInk })}
+${lines(x + 20, y + 56, d, { size: 13, weight: 500, lh: 18, fill: P.cardMuted })}</g>`;
   });
   const H = top + 2 * th + 12 + 40;
   // экран звонка в дизайне «Инструмент»: утопленное табло с «незажжёнными» восьмёрками
   const cy = H / 2 - 130, cx = 588;
   b += `<g class="r" ${delay(3)}><ellipse cx="${cx + 126}" cy="${cy + 130}" rx="170" ry="170" fill="url(#g1)"/>${card(cx, cy, 252, 260, 22)}
 <circle class="blink" cx="${cx + 24}" cy="${cy + 30}" r="4" fill="${O}"/>
-${fitText(cx + 36, cy + 34, h.ring, 160, { size: 10, weight: 600, mono: true, spacing: 1.6, fill: P.dim })}
+${fitText(cx + 36, cy + 34, h.ring, 160, { size: 10, weight: 600, mono: true, spacing: 1.6, fill: P.cardMuted })}
 <circle class="ring" cx="${cx + 226}" cy="${cy + 30}" r="8" fill="none" stroke="${O}" stroke-width="2"/><circle cx="${cx + 226}" cy="${cy + 30}" r="8" fill="${O}"/>
 <rect x="${cx + 18}" y="${cy + 54}" width="216" height="96" rx="12" fill="#121212" stroke="${P.stroke}"/>
 <text class="m" x="${cx + 126}" y="${cy + 122}" text-anchor="middle" font-size="56" font-weight="700" letter-spacing="-2" fill="#fff" fill-opacity=".05">${T('88:88')}</text>
 <text class="m" x="${cx + 126}" y="${cy + 122}" text-anchor="middle" font-size="56" font-weight="700" letter-spacing="-2" fill="url(#tg)">${T('07')}<tspan class="blink">${T(':')}</tspan>${T('30')}</text>
-${fitText(cx + 22, cy + 176, h.alarm, 210, { size: 14, weight: 600, fill: '#D6D6D6' })}
+${fitText(cx + 22, cy + 176, h.alarm, 210, { size: 14, weight: 600, fill: P.cardInk })}
 <rect x="${cx + 18}" y="${cy + 196}" width="130" height="40" rx="12" fill="${O}"/>${fitText(cx + 83, cy + 221, h.off, 116, { size: 13, weight: 700, fill: '#1F0B00', anchor: 'middle' })}
-<rect x="${cx + 156}" y="${cy + 196}" width="78" height="40" rx="12" fill="#292929" stroke="${P.stroke}"/>${fitText(cx + 195, cy + 221, h.snooze, 66, { size: 13, weight: 600, anchor: 'middle' })}</g>`;
+<rect x="${cx + 156}" y="${cy + 196}" width="78" height="40" rx="12" fill="${P.ink}" stroke="${P.cardStroke}"/>${fitText(cx + 195, cy + 221, h.snooze, 66, { size: 13, weight: 600, fill: P.cardInk, anchor: 'middle' })}</g>`;
   return svg(880, H, h.alt, b + `<style>${RING}</style>`);
 }
 
@@ -75,8 +75,8 @@ function features(t) {
   items.forEach(([title, d], i) => {
     const x = 40 + (i % 3) * (cw + 12), y = head.y + Math.floor(i / 3) * (ch + 12);
     b += `<g class="r" ${delay(2 + i * 0.6)}>${card(x, y, cw, ch)}${badge(x + 36, y + 38, i + 1)}
-${fitText(x + 64, y + 44, title, cw - 80, { size: 17, weight: 700 })}
-${lines(x + 20, y + 84, d, { size: 14, weight: 500, lh: 20, fill: P.muted })}</g>`;
+${fitText(x + 64, y + 44, title, cw - 80, { size: 17, weight: 700, fill: P.cardInk })}
+${lines(x + 20, y + 84, d, { size: 14, weight: 500, lh: 20, fill: P.cardMuted })}</g>`;
   });
   return svg(880, head.y + 2 * ch + 12 + 36, `${f.label} — ${f.title}`, b);
 }
@@ -88,28 +88,28 @@ function quality(t) {
   let b = head.s;
   const y0 = head.y, cw = 196, ch = 130;
   const num = (x, y, label, value, unit, sub, d, hi) => `<g class="r" ${delay(d)}>${card(x, y, cw, ch)}
-${fitText(x + 20, y + 30, label, cw - 40, { size: 11, weight: 600, mono: true, spacing: 1.4, fill: P.dim })}
-<text class="m" x="${x + 20}" y="${y + 82}" font-size="40" font-weight="700" letter-spacing="-1.5" fill="${hi ? 'url(#tg)' : '#fff'}">${T(value)}<tspan font-size="16" fill="${P.muted}">${T(unit ? ' ' + unit : '')}</tspan></text>
-${fitText(x + 20, y + 110, sub, cw - 36, { size: 13, weight: 500, fill: P.muted })}</g>`;
+${fitText(x + 20, y + 30, label, cw - 40, { size: 11, weight: 600, mono: true, spacing: 1.4, fill: P.cardMuted })}
+<text class="m" x="${x + 20}" y="${y + 82}" font-size="40" font-weight="700" letter-spacing="-1.5" fill="${hi ? P.cardAccent : P.cardInk}">${T(value)}<tspan font-size="16" fill="${P.cardMuted}">${T(unit ? ' ' + unit : '')}</tspan></text>
+${fitText(x + 20, y + 110, sub, cw - 36, { size: 13, weight: 500, fill: P.cardMuted, hiFill: P.cardAccent })}</g>`;
   b += num(40, y0, q.apk[0], q.apk[1], q.apk[2], q.apk[3], 2, true);
   b += num(40 + cw + 12, y0, q.trackers[0], '0', '', q.trackers[1], 2.5);
   b += num(40, y0 + ch + 12, q.support[0], '8–16', '', q.support[1], 3);
   b += num(40 + cw + 12, y0 + ch + 12, q.tests[0], '17/17', '', q.tests[1], 3.5);
   // разрешения
   const px = 40 + 2 * (cw + 12), pw = 840 - px, ph = 2 * ch + 12;
-  let p = `${card(px, y0, pw, ph)}${fitText(px + 22, y0 + 30, q.perms, pw - 44, { size: 11, weight: 600, mono: true, spacing: 1.4, fill: P.dim })}`;
+  let p = `${card(px, y0, pw, ph)}${fitText(px + 22, y0 + 30, q.perms, pw - 44, { size: 11, weight: 600, mono: true, spacing: 1.4, fill: P.cardMuted })}`;
   q.yes.forEach((s, i) => {
     const yy = y0 + 62 + i * 30;
     p += `<circle cx="${px + 32}" cy="${yy - 5}" r="9" fill="${O}"/><path d="M${px + 27.5} ${yy - 5}l3 3 5.5-6" fill="none" stroke="#1F0B00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`;
-    p += fitText(px + 52, yy, s, pw - 74, { size: 14, weight: 500, fill: '#E6E6E6' });
+    p += fitText(px + 52, yy, s, pw - 74, { size: 14, weight: 500, fill: P.cardInk });
   });
   const ly = y0 + 62 + q.yes.length * 30 - 8;
-  p += `<line x1="${px + 22}" y1="${ly}" x2="${px + pw - 22}" y2="${ly}" stroke="${P.stroke}"/>`;
+  p += `<line x1="${px + 22}" y1="${ly}" x2="${px + pw - 22}" y2="${ly}" stroke="${P.cardStroke}"/>`;
   const colW = (pw - 44) / 2;
   q.no.forEach((s, i) => {
     const xx = px + 22 + (i % 2) * colW, yy = ly + 30 + Math.floor(i / 2) * 28;
-    p += `<circle cx="${xx + 10}" cy="${yy - 5}" r="8.5" fill="none" stroke="${P.stroke}"/><path d="M${xx + 6.8} ${yy - 8.2}l6.4 6.4m0-6.4-6.4 6.4" stroke="${P.dim}" stroke-width="1.5" stroke-linecap="round"/>`;
-    p += fitText(xx + 28, yy, s, colW - 34, { size: 13, weight: 500, fill: P.dim });
+    p += `<circle cx="${xx + 10}" cy="${yy - 5}" r="8.5" fill="none" stroke="${P.cardStroke}"/><path d="M${xx + 6.8} ${yy - 8.2}l6.4 6.4m0-6.4-6.4 6.4" stroke="${P.cardMuted}" stroke-width="1.5" stroke-linecap="round"/>`;
+    p += fitText(xx + 28, yy, s, colW - 34, { size: 13, weight: 500, fill: P.cardMuted });
   });
   b += `<g class="r" ${delay(4)}>${p}</g>`;
   const sy = y0 + ph + 34;
@@ -170,7 +170,7 @@ function screens(t) {
     defs += `<clipPath id="c${i}"><rect x="${x}" y="40" width="180" height="387" rx="24"/></clipPath>`;
     const lbl = s.labels[ORDER[i]];
     const c = chip(0, 0, lbl, { upper: false });
-    b += `<g class="r" ${delay(1 + i)}><rect x="${x - 7}" y="33" width="194" height="401" rx="30" fill="#232323" stroke="${P.stroke}"/>
+    b += `<g class="r" ${delay(1 + i)}>${card(x - 7, 33, 194, 401, 30)}
 <image x="${x}" y="40" width="180" height="387" preserveAspectRatio="xMidYMin slice" clip-path="url(#c${i})" href="data:image/jpeg;base64,${shots[i]}"/>
 <rect x="${x + 70}" y="48" width="40" height="10" rx="5" fill="#000"/>
 ${chip(x + 90 - c.w / 2, 452, lbl, { upper: false }).s}</g>`;

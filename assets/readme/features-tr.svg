@@ -19,12 +19,11 @@ text{font-family:"G","Segoe UI",system-ui,sans-serif}
 @media (prefers-reduced-motion:reduce){.r,.glow,.glow2,.blink,.pulse,.sweep{animation:none}}
 </style>
 <defs>
-<radialGradient id="g1" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FF8A38" stop-opacity="0.13"/><stop offset="1" stop-color="#FF8A38" stop-opacity="0"/></radialGradient>
+<radialGradient id="g1" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FF8A38" stop-opacity="0.2"/><stop offset="1" stop-color="#FF8A38" stop-opacity="0"/></radialGradient>
 <radialGradient id="g2" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#F88635" stop-opacity=".08"/><stop offset="1" stop-color="#F88635" stop-opacity="0"/></radialGradient>
-<linearGradient id="cg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2B2B2B"/><stop offset="1" stop-color="#191919"/></linearGradient>
-<linearGradient id="hl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFB46B" stop-opacity="0"/><stop offset=".5" stop-color="#FFB46B" stop-opacity=".35"/><stop offset="1" stop-color="#FFB46B" stop-opacity="0"/></linearGradient>
+<linearGradient id="cg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F3EF"/></linearGradient>
 <linearGradient id="tg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFB46B"/><stop offset="1" stop-color="#F88635"/></linearGradient>
-<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1D1D1D"/><stop offset="1" stop-color="#101010"/></linearGradient>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#282522"/><stop offset="1" stop-color="#191817"/></linearGradient>
 <linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".07"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
 <clipPath id="clip"><rect width="880" height="476" rx="24"/></clipPath>
 </defs>
@@ -32,31 +31,31 @@ text{font-family:"G","Segoe UI",system-ui,sans-serif}
 <circle class="glow" cx="721.5999999999999" cy="95.2" r="333.2" fill="url(#g1)"/>
 <circle class="glow2" cx="88" cy="452.2" r="285.59999999999997" fill="url(#g2)"/>
 <rect class="sweep" x="0" y="0" width="308" height="476" fill="url(#sw)"/></g>
-<rect x=".5" y=".5" width="879" height="475" rx="24" fill="none" stroke="#4C4C4C"/>
-<g class="r"><rect x="40" y="34" width="127" height="30" rx="8" fill="#272727" stroke="#4C4C4C"/><path d="M53 49.5l4 4 8-8.5" fill="none" stroke="#FF9A46" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><text class="m" x="72" y="54" font-size="12" font-weight="600" letter-spacing="1" fill="#FFFFFF">ÖZELLİKLER</text></g>
-<g class="r" style="animation-delay:0.09s"><text x="40" y="104.0" font-size="32" font-weight="800" letter-spacing="-.6" fill="#FFFFFF"><tspan>Sabah</tspan><tspan fill="url(#tg)"> ihtiyacın olan</tspan><tspan> her şey</tspan></text></g><g class="r" style="animation-delay:0.18s"><rect x="40" y="132" width="258.6666666666667" height="148" rx="18" fill="url(#cg)" stroke="#4C4C4C"/><rect x="58" y="132.5" width="222.66666666666669" height="1" fill="url(#hl)"/><circle cx="76" cy="170" r="16" fill="#FF9A46"/><text class="m" x="76" y="175" text-anchor="middle" font-size="15" font-weight="700" fill="#1F0B00">1</text>
-<text x="104" y="176" font-size="17" font-weight="700" fill="#FFFFFF"><tspan>Tam zamanında alarm</tspan></text>
-<text x="60" y="216.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>Sistem AlarmClock'u: telefon</tspan></text>
-<text x="60" y="236.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>uykudayken bile tam</tspan></text>
-<text x="60" y="256.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>dakikasında çalar</tspan></text></g><g class="r" style="animation-delay:0.23s"><rect x="310.6666666666667" y="132" width="258.6666666666667" height="148" rx="18" fill="url(#cg)" stroke="#4C4C4C"/><rect x="328.6666666666667" y="132.5" width="222.66666666666669" height="1" fill="url(#hl)"/><circle cx="346.6666666666667" cy="170" r="16" fill="#FF9A46"/><text class="m" x="346.6666666666667" y="175" text-anchor="middle" font-size="15" font-weight="700" fill="#1F0B00">2</text>
-<text x="374.6666666666667" y="176" font-size="16" font-weight="700" fill="#FFFFFF"><tspan>Kilit ekranının üstünde</tspan></text>
-<text x="330.6666666666667" y="216.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>Ekranı kendisi açar ve büyük</tspan></text>
-<text x="330.6666666666667" y="236.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>“Kapat” ve “Ertele” düğmeleri</tspan></text>
-<text x="330.6666666666667" y="256.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>gösterir</tspan></text></g><g class="r" style="animation-delay:0.29s"><rect x="581.3333333333334" y="132" width="258.6666666666667" height="148" rx="18" fill="url(#cg)" stroke="#4C4C4C"/><rect x="599.3333333333334" y="132.5" width="222.66666666666669" height="1" fill="url(#hl)"/><circle cx="617.3333333333334" cy="170" r="16" fill="#FF9A46"/><text class="m" x="617.3333333333334" y="175" text-anchor="middle" font-size="15" font-weight="700" fill="#1F0B00">3</text>
-<text x="645.3333333333334" y="176" font-size="17" font-weight="700" fill="#FFFFFF"><tspan>Sakin uyanış</tspan></text>
-<text x="601.3333333333334" y="216.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>Sessiz başlar, ses yaklaşık bir</tspan></text>
-<text x="601.3333333333334" y="236.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>dakikada yükselir. Her alarm için</tspan></text>
-<text x="601.3333333333334" y="256.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>ayrı ayarlanır</tspan></text></g><g class="r" style="animation-delay:0.34s"><rect x="40" y="292" width="258.6666666666667" height="148" rx="18" fill="url(#cg)" stroke="#4C4C4C"/><rect x="58" y="292.5" width="222.66666666666669" height="1" fill="url(#hl)"/><circle cx="76" cy="330" r="16" fill="#FF9A46"/><text class="m" x="76" y="335" text-anchor="middle" font-size="15" font-weight="700" fill="#1F0B00">4</text>
-<text x="104" y="336" font-size="17" font-weight="700" fill="#FFFFFF"><tspan>Etiketler ve renkler</tspan></text>
-<text x="60" y="376.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>İş, Spor, kendi etiketlerin —</tspan></text>
-<text x="60" y="396.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>filtreyle. Alarm kartları için 10</tspan></text>
-<text x="60" y="416.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>renk</tspan></text></g><g class="r" style="animation-delay:0.40s"><rect x="310.6666666666667" y="292" width="258.6666666666667" height="148" rx="18" fill="url(#cg)" stroke="#4C4C4C"/><rect x="328.6666666666667" y="292.5" width="222.66666666666669" height="1" fill="url(#hl)"/><circle cx="346.6666666666667" cy="330" r="16" fill="#FF9A46"/><text class="m" x="346.6666666666667" y="335" text-anchor="middle" font-size="15" font-weight="700" fill="#1F0B00">5</text>
-<text x="374.6666666666667" y="336" font-size="17" font-weight="700" fill="#FFFFFF"><tspan>8 tema + kendi rengin</tspan></text>
-<text x="330.6666666666667" y="376.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>Material You, 6 palet ve kendi</tspan></text>
-<text x="330.6666666666667" y="396.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>paletin: ton, doygunluk, 7 gama.</tspan></text>
-<text x="330.6666666666667" y="416.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>Açık, koyu, AMOLED</tspan></text></g><g class="r" style="animation-delay:0.45s"><rect x="581.3333333333334" y="292" width="258.6666666666667" height="148" rx="18" fill="url(#cg)" stroke="#4C4C4C"/><rect x="599.3333333333334" y="292.5" width="222.66666666666669" height="1" fill="url(#hl)"/><circle cx="617.3333333333334" cy="330" r="16" fill="#FF9A46"/><text class="m" x="617.3333333333334" y="335" text-anchor="middle" font-size="15" font-weight="700" fill="#1F0B00">6</text>
-<text x="645.3333333333334" y="336" font-size="17" font-weight="700" fill="#FFFFFF"><tspan>10 dil</tspan></text>
-<text x="601.3333333333334" y="376.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>RU, EN, UK, ES, PT, DE, FR, IT,</tspan></text>
-<text x="601.3333333333334" y="396.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>TR, PL — tarih ve saat dilinin</tspan></text>
-<text x="601.3333333333334" y="416.0" font-size="14" font-weight="500" fill="#D6D6D6"><tspan>kurallarıyla</tspan></text></g>
+<rect x=".5" y=".5" width="879" height="475" rx="24" fill="none" stroke="#5B514A"/>
+<g class="r"><rect x="40" y="34" width="127" height="30" rx="8" fill="#FFFFFF" stroke="#DED7D0"/><path d="M53 49.5l4 4 8-8.5" fill="none" stroke="#A84405" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><text class="m" x="72" y="54" font-size="12" font-weight="600" letter-spacing="1" fill="#221913">ÖZELLİKLER</text></g>
+<g class="r" style="animation-delay:0.09s"><text x="40" y="104.0" font-size="32" font-weight="800" letter-spacing="-.6" fill="#FFFFFF"><tspan>Sabah</tspan><tspan fill="url(#tg)"> ihtiyacın olan</tspan><tspan> her şey</tspan></text></g><g class="r" style="animation-delay:0.18s"><rect x="40" y="132" width="258.6666666666667" height="148" rx="18" fill="url(#cg)" stroke="#DED7D0"/><circle cx="76" cy="170" r="16" fill="#FF9A46"/><text class="m" x="76" y="175" text-anchor="middle" font-size="15" font-weight="700" fill="#1F0B00">1</text>
+<text x="104" y="176" font-size="17" font-weight="700" fill="#221913"><tspan>Tam zamanında alarm</tspan></text>
+<text x="60" y="216.0" font-size="14" font-weight="500" fill="#58514B"><tspan>Sistem AlarmClock'u: telefon</tspan></text>
+<text x="60" y="236.0" font-size="14" font-weight="500" fill="#58514B"><tspan>uykudayken bile tam</tspan></text>
+<text x="60" y="256.0" font-size="14" font-weight="500" fill="#58514B"><tspan>dakikasında çalar</tspan></text></g><g class="r" style="animation-delay:0.23s"><rect x="310.6666666666667" y="132" width="258.6666666666667" height="148" rx="18" fill="url(#cg)" stroke="#DED7D0"/><circle cx="346.6666666666667" cy="170" r="16" fill="#FF9A46"/><text class="m" x="346.6666666666667" y="175" text-anchor="middle" font-size="15" font-weight="700" fill="#1F0B00">2</text>
+<text x="374.6666666666667" y="176" font-size="16" font-weight="700" fill="#221913"><tspan>Kilit ekranının üstünde</tspan></text>
+<text x="330.6666666666667" y="216.0" font-size="14" font-weight="500" fill="#58514B"><tspan>Ekranı kendisi açar ve büyük</tspan></text>
+<text x="330.6666666666667" y="236.0" font-size="14" font-weight="500" fill="#58514B"><tspan>“Kapat” ve “Ertele” düğmeleri</tspan></text>
+<text x="330.6666666666667" y="256.0" font-size="14" font-weight="500" fill="#58514B"><tspan>gösterir</tspan></text></g><g class="r" style="animation-delay:0.29s"><rect x="581.3333333333334" y="132" width="258.6666666666667" height="148" rx="18" fill="url(#cg)" stroke="#DED7D0"/><circle cx="617.3333333333334" cy="170" r="16" fill="#FF9A46"/><text class="m" x="617.3333333333334" y="175" text-anchor="middle" font-size="15" font-weight="700" fill="#1F0B00">3</text>
+<text x="645.3333333333334" y="176" font-size="17" font-weight="700" fill="#221913"><tspan>Sakin uyanış</tspan></text>
+<text x="601.3333333333334" y="216.0" font-size="14" font-weight="500" fill="#58514B"><tspan>Sessiz başlar, ses yaklaşık bir</tspan></text>
+<text x="601.3333333333334" y="236.0" font-size="14" font-weight="500" fill="#58514B"><tspan>dakikada yükselir. Her alarm için</tspan></text>
+<text x="601.3333333333334" y="256.0" font-size="14" font-weight="500" fill="#58514B"><tspan>ayrı ayarlanır</tspan></text></g><g class="r" style="animation-delay:0.34s"><rect x="40" y="292" width="258.6666666666667" height="148" rx="18" fill="url(#cg)" stroke="#DED7D0"/><circle cx="76" cy="330" r="16" fill="#FF9A46"/><text class="m" x="76" y="335" text-anchor="middle" font-size="15" font-weight="700" fill="#1F0B00">4</text>
+<text x="104" y="336" font-size="17" font-weight="700" fill="#221913"><tspan>Etiketler ve renkler</tspan></text>
+<text x="60" y="376.0" font-size="14" font-weight="500" fill="#58514B"><tspan>İş, Spor, kendi etiketlerin —</tspan></text>
+<text x="60" y="396.0" font-size="14" font-weight="500" fill="#58514B"><tspan>filtreyle. Alarm kartları için 10</tspan></text>
+<text x="60" y="416.0" font-size="14" font-weight="500" fill="#58514B"><tspan>renk</tspan></text></g><g class="r" style="animation-delay:0.40s"><rect x="310.6666666666667" y="292" width="258.6666666666667" height="148" rx="18" fill="url(#cg)" stroke="#DED7D0"/><circle cx="346.6666666666667" cy="330" r="16" fill="#FF9A46"/><text class="m" x="346.6666666666667" y="335" text-anchor="middle" font-size="15" font-weight="700" fill="#1F0B00">5</text>
+<text x="374.6666666666667" y="336" font-size="17" font-weight="700" fill="#221913"><tspan>8 tema + kendi rengin</tspan></text>
+<text x="330.6666666666667" y="376.0" font-size="14" font-weight="500" fill="#58514B"><tspan>Material You, 6 palet ve kendi</tspan></text>
+<text x="330.6666666666667" y="396.0" font-size="14" font-weight="500" fill="#58514B"><tspan>paletin: ton, doygunluk, 7 gama.</tspan></text>
+<text x="330.6666666666667" y="416.0" font-size="14" font-weight="500" fill="#58514B"><tspan>Açık, koyu, AMOLED</tspan></text></g><g class="r" style="animation-delay:0.45s"><rect x="581.3333333333334" y="292" width="258.6666666666667" height="148" rx="18" fill="url(#cg)" stroke="#DED7D0"/><circle cx="617.3333333333334" cy="330" r="16" fill="#FF9A46"/><text class="m" x="617.3333333333334" y="335" text-anchor="middle" font-size="15" font-weight="700" fill="#1F0B00">6</text>
+<text x="645.3333333333334" y="336" font-size="17" font-weight="700" fill="#221913"><tspan>10 dil</tspan></text>
+<text x="601.3333333333334" y="376.0" font-size="14" font-weight="500" fill="#58514B"><tspan>RU, EN, UK, ES, PT, DE, FR, IT,</tspan></text>
+<text x="601.3333333333334" y="396.0" font-size="14" font-weight="500" fill="#58514B"><tspan>TR, PL — tarih ve saat dilinin</tspan></text>
+<text x="601.3333333333334" y="416.0" font-size="14" font-weight="500" fill="#58514B"><tspan>kurallarıyla</tspan></text></g>
 </svg>

@@ -25,7 +25,10 @@ export function createKit({ golos, mono, accent }) {
   let allText = '';
   const T = (s) => { allText += s; return esc(s); };
 
-  const P = { ink: '#FFFFFF', muted: '#D6D6D6', dim: '#B8B8B8', stroke: '#4C4C4C' };
+  const P = {
+    ink: '#FFFFFF', muted: '#D6D6D6', dim: '#B8B8B8', stroke: '#5B514A',
+    cardInk: '#221913', cardMuted: '#58514B', cardStroke: '#DED7D0', cardAccent: '#A84405',
+  };
 
   /** Ширина строки в px. */
   function width(s, size, weight = 400, { mono = false, ls = 0 } = {}) {
@@ -78,11 +81,11 @@ export function createKit({ golos, mono, accent }) {
     return ls.map((l, i) => `<text${mono ? ' class="m"' : ''} x="${x}" y="${(y + i * lh).toFixed(1)}" font-size="${size}" font-weight="${weight}"${spacing ? ` letter-spacing="${spacing}"` : ''}${anchor ? ` text-anchor="${anchor}"` : ''} fill="${fill}">${spans(l, hiFill)}</text>`).join('\n');
   }
   /** Одна строка, ужатая до maxW: если не влезает — уменьшается кегль. */
-  function fitText(x, y, s, maxW, { size, weight = 500, fill = P.ink, mono = false, spacing = 0, anchor, cls } = {}) {
+  function fitText(x, y, s, maxW, { size, weight = 500, fill = P.ink, hiFill, mono = false, spacing = 0, anchor, cls } = {}) {
     let sz = size;
     while (sz > size * 0.6 && width(s, sz, weight, { mono, ls: spacing }) > maxW) sz -= 0.5;
     const c = [mono ? 'm' : '', cls || ''].filter(Boolean).join(' ');
-    return `<text${c ? ` class="${c}"` : ''} x="${x}" y="${y}" font-size="${sz}" font-weight="${weight}"${spacing ? ` letter-spacing="${spacing}"` : ''}${anchor ? ` text-anchor="${anchor}"` : ''} fill="${fill}">${spans(wrapOne(s))}</text>`;
+    return `<text${c ? ` class="${c}"` : ''} x="${x}" y="${y}" font-size="${sz}" font-weight="${weight}"${spacing ? ` letter-spacing="${spacing}"` : ''}${anchor ? ` text-anchor="${anchor}"` : ''} fill="${fill}">${spans(wrapOne(s), hiFill)}</text>`;
   }
   const wrapOne = (s) => wrap(s, 1e9, 10)[0] || [];
   /** Общий кегль для нескольких строк, чтобы каждая влезла в maxW. */
@@ -119,10 +122,9 @@ ${fontCss(fg, fm)}
   const defs = (w, h) => `<defs>
 <radialGradient id="g1" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="${A.glow}" stop-opacity="${A.glowOpacity ?? 0.2}"/><stop offset="1" stop-color="${A.glow}" stop-opacity="0"/></radialGradient>
 <radialGradient id="g2" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="${A.glow2}" stop-opacity=".08"/><stop offset="1" stop-color="${A.glow2}" stop-opacity="0"/></radialGradient>
-<linearGradient id="cg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2B2B2B"/><stop offset="1" stop-color="#191919"/></linearGradient>
-<linearGradient id="hl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="${A.grad[0]}" stop-opacity="0"/><stop offset=".5" stop-color="${A.grad[0]}" stop-opacity=".35"/><stop offset="1" stop-color="${A.grad[0]}" stop-opacity="0"/></linearGradient>
+<linearGradient id="cg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${P.ink}"/><stop offset="1" stop-color="#F7F3EF"/></linearGradient>
 <linearGradient id="tg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="${A.grad[0]}"/><stop offset="1" stop-color="${A.grad[1]}"/></linearGradient>
-<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1D1D1D"/><stop offset="1" stop-color="#101010"/></linearGradient>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#282522"/><stop offset="1" stop-color="#191817"/></linearGradient>
 <linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".07"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
 <clipPath id="clip"><rect width="${w}" height="${h}" rx="24"/></clipPath>
 </defs>`;
@@ -140,19 +142,19 @@ ${fontCss(fg, fm)}
   const delay = (i) => `style="animation-delay:${(i * 0.09).toFixed(2)}s"`;
 
   const card = (x, y, w, h, rx = 18) =>
-    `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx}" fill="url(#cg)" stroke="${P.stroke}"/><rect x="${x + rx}" y="${y + .5}" width="${Math.max(0, w - rx * 2)}" height="1" fill="url(#hl)"/>`;
+    `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx}" fill="url(#cg)" stroke="${P.cardStroke}"/>`;
 
   /** Метка-чип: моно, заглавные. check — галочка цвета акцента. */
   function chip(x, y, text, { check = false, upper = true } = {}) {
     const label = upper ? text.toUpperCase() : text;
     const w = Math.round(width(label, 12, 600, { mono: true, ls: 1 }) + (check ? 46 : 28));
-    let s = `<rect x="${x}" y="${y}" width="${w}" height="30" rx="8" fill="#272727" stroke="${P.stroke}"/>`;
+    let s = `<rect x="${x}" y="${y}" width="${w}" height="30" rx="8" fill="${P.ink}" stroke="${P.cardStroke}"/>`;
     let tx = x + 14;
     if (check) {
-      s += `<path d="M${x + 13} ${y + 15.5}l4 4 8-8.5" fill="none" stroke="${A.hi}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>`;
+      s += `<path d="M${x + 13} ${y + 15.5}l4 4 8-8.5" fill="none" stroke="${P.cardAccent}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>`;
       tx = x + 32;
     }
-    s += `<text class="m" x="${tx}" y="${y + 20}" font-size="12" font-weight="600" letter-spacing="1" fill="${P.ink}">${T(label)}</text>`;
+    s += `<text class="m" x="${tx}" y="${y + 20}" font-size="12" font-weight="600" letter-spacing="1" fill="${P.cardInk}">${T(label)}</text>`;
     return { s, w };
   }
 
@@ -179,13 +181,13 @@ ${fontCss(fg, fm)}
   function button(label, icon, { detail = '', primary = false } = {}) {
     const w = 62 + Math.ceil(Math.max(width(label, 14, 700), width(detail, 11, 600)));
     const name = detail ? `${label}, ${detail}` : label;
-    const ink = primary ? A.on : P.ink;
-    const surfaceTop = primary ? A.grad[0] : '#303030';
-    const surfaceBottom = primary ? A.grad[1] : '#1D1D1D';
-    const edge = primary ? '#903D10' : '#3C3C3C';
-    const rim = primary ? '#FFBB79' : '#945630';
-    const well = primary ? '#2A170E' : '#171717';
-    const iconInk = primary ? P.ink : A.hi;
+    const ink = primary ? A.on : P.cardInk;
+    const surfaceTop = primary ? A.grad[0] : P.ink;
+    const surfaceBottom = primary ? A.grad[1] : '#F7F3EF';
+    const edge = primary ? '#903D10' : '#B69D89';
+    const rim = primary ? '#FFBB79' : P.cardStroke;
+    const well = primary ? '#2A170E' : '#FCE6D4';
+    const iconInk = primary ? P.ink : P.cardAccent;
     return (fg) => {
       const sublabel = detail ? `<text x="48" y="38" font-size="11" font-weight="600" fill="${ink}">${T(detail)}</text>` : '';
       return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="52" viewBox="0 0 ${w} 52" role="img" aria-label="${esc(name)}">
