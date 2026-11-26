@@ -186,12 +186,15 @@ private fun NextWell(alarms: List<Alarm>, now: ZonedDateTime) {
     val next = alarms.filter { it.enabled }.minByOrNull { it.nextTrigger(now) }
     val at = next?.nextTrigger(now)
     val shape = RoundedCornerShape(24.dp)
+    val face = cardFace()
+    val light = lerp(face, Color.White, if (colors.dark) 0.045f else 0.28f)
+    val shade = lerp(face, Color.Black, if (colors.dark) 0.09f else 0.035f)
     Column(
         Modifier
             .fillMaxWidth()
             .shadow(8.dp, shape, clip = false, ambientColor = Color.Black.copy(alpha = 0.1f), spotColor = Color.Black.copy(alpha = 0.1f))
             .clip(shape)
-            .background(cardFace())
+            .background(Brush.verticalGradient(listOf(light, shade)))
             .border(1.dp, colors.line, shape)
             .padding(horizontal = 18.dp, vertical = 16.dp),
     ) {
