@@ -4,9 +4,9 @@
 
 <br>
 
-<picture><source srcset="=bc7cc28f0de5"><img src="assets/readme/png/hero-de.png" width="100%" alt="Budila — Pünktlich aufwachen. Leicht aufstehen."></picture>
+<picture><source srcset="assets/readme/hero-de.svg?v=bc7cc28f0de5"><img src="assets/readme/png/hero-de.png" width="100%" alt="Budila — Pünktlich aufwachen. Leicht aufstehen."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="=a973db55037b" height="52" alt="APK herunterladen"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="=17a7cbebc445" height="52" alt="Neuigkeiten"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-de.svg?v=a973db55037b" height="52" alt="APK herunterladen"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-de.svg?v=17a7cbebc445" height="52" alt="Neuigkeiten"></a>
 
 **Budila ist ein Wecker für Android, der dich pünktlich und ohne Stress weckt.** Sanftes Wecken, Tags und Farben, das eigene Design „Instrument“ und 8 Material-You-Themes. Kein Internetzugriff, keine Werbung, keine Tracker.
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="=66d190470ead"><img src="assets/readme/png/screens-de.png" width="100%" alt="Budila-Bildschirme: Tags und Farben, eigenes Design, Weckruf, dunkles Design"></picture>
+<picture><source srcset="assets/readme/screens-de.svg?v=66d190470ead"><img src="assets/readme/png/screens-de.png" width="100%" alt="Budila-Bildschirme: Tags und Farben, eigenes Design, Weckruf, dunkles Design"></picture>
 
 <br>
 
-<picture><source srcset="=1767e168d04d"><img src="assets/readme/png/features-de.png" width="100%" alt="Was Budila kann"></picture>
+<picture><source srcset="assets/readme/features-de.svg?v=1767e168d04d"><img src="assets/readme/png/features-de.png" width="100%" alt="Was Budila kann"></picture>
 
 <details>
 <summary><b>Mehr zu den Funktionen</b></summary>
@@ -59,7 +59,7 @@ Wecker werden über den System-`AlarmClock` gestellt und klingeln pünktlich, au
 
 <br>
 
-<picture><source srcset="=ce89c6d587da"><img src="assets/readme/png/quality-de.png" width="100%" alt="Qualität in Zahlen"></picture>
+<picture><source srcset="assets/readme/quality-de.svg?v=ce89c6d587da"><img src="assets/readme/png/quality-de.png" width="100%" alt="Qualität in Zahlen"></picture>
 
 <details>
 <summary><b>Installation</b></summary>

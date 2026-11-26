@@ -4,9 +4,9 @@
 
 <br>
 
-<picture><source srcset="=f04c40552475"><img src="assets/readme/png/hero-uk.png" width="100%" alt="Budila — Прокидайся вчасно. Вставай легко."></picture>
+<picture><source srcset="assets/readme/hero-uk.svg?v=f04c40552475"><img src="assets/readme/png/hero-uk.png" width="100%" alt="Budila — Прокидайся вчасно. Вставай легко."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="=d2abf86dd9f3" height="52" alt="Завантажити APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="=ab1702f71b1e" height="52" alt="Що нового"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-uk.svg?v=d2abf86dd9f3" height="52" alt="Завантажити APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-uk.svg?v=ab1702f71b1e" height="52" alt="Що нового"></a>
 
 **Budila — будильник для Android, який будить вчасно і без стресу.** Спокійне пробудження, теги й кольори, фірмовий дизайн «Інструмент» і 8 тем Material You. Працює без інтернету, без реклами й трекерів.
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="=1ba9f7da8ba8"><img src="assets/readme/png/screens-uk.png" width="100%" alt="Екрани Budila: теги й кольори, своя тема, дзвінок, темна тема"></picture>
+<picture><source srcset="assets/readme/screens-uk.svg?v=1ba9f7da8ba8"><img src="assets/readme/png/screens-uk.png" width="100%" alt="Екрани Budila: теги й кольори, своя тема, дзвінок, темна тема"></picture>
 
 <br>
 
-<picture><source srcset="=95f3bf7b0863"><img src="assets/readme/png/features-uk.png" width="100%" alt="Що вміє Budila"></picture>
+<picture><source srcset="assets/readme/features-uk.svg?v=95f3bf7b0863"><img src="assets/readme/png/features-uk.png" width="100%" alt="Що вміє Budila"></picture>
 
 <details>
 <summary><b>Докладніше про можливості</b></summary>
@@ -59,7 +59,7 @@
 
 <br>
 
-<picture><source srcset="=9dd8a1aca40c"><img src="assets/readme/png/quality-uk.png" width="100%" alt="Якість у цифрах"></picture>
+<picture><source srcset="assets/readme/quality-uk.svg?v=9dd8a1aca40c"><img src="assets/readme/png/quality-uk.png" width="100%" alt="Якість у цифрах"></picture>
 
 <details>
 <summary><b>Встановлення</b></summary>
