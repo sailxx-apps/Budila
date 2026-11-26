@@ -6,7 +6,7 @@
 
 <picture><source srcset="assets/readme/hero-es.svg"><img src="assets/readme/png/hero-es.png" width="100%" alt="Budila — Despierta a tiempo. Levántate sin esfuerzo."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-es.svg" height="52" alt="Descargar APK"></a>&nbsp;&nbsp;<a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-es.svg" height="52" alt="Novedades"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-es.svg" height="52" alt="Descargar APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-es.svg" height="52" alt="Novedades"></a>
 
 **Budila es un despertador para Android que te despierta a tiempo y sin estrés.** Despertar suave, etiquetas y colores, el diseño propio «Instrumento» y 8 temas Material You. Sin acceso a internet, sin anuncios ni rastreadores.
 

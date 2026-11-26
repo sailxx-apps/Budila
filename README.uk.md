@@ -6,7 +6,7 @@
 
 <picture><source srcset="assets/readme/hero-uk.svg"><img src="assets/readme/png/hero-uk.png" width="100%" alt="Budila — Прокидайся вчасно. Вставай легко."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-uk.svg" height="52" alt="Завантажити APK"></a>&nbsp;&nbsp;<a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-uk.svg" height="52" alt="Що нового"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-uk.svg" height="52" alt="Завантажити APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-uk.svg" height="52" alt="Що нового"></a>
 
 **Budila — будильник для Android, який будить вчасно і без стресу.** Спокійне пробудження, теги й кольори, фірмовий дизайн «Інструмент» і 8 тем Material You. Працює без інтернету, без реклами й трекерів.
 

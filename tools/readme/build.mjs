@@ -14,14 +14,12 @@ const REPO = path.resolve(DIR, '../..');
 const OUT = path.join(REPO, 'assets/readme');
 const STR = JSON.parse(fs.readFileSync(path.join(DIR, 'strings.json'), 'utf8'));
 const MD = JSON.parse(fs.readFileSync(path.join(DIR, 'md.json'), 'utf8'));
-// Версия берётся из versionName в app/build.gradle.kts; в strings.json — {version}.
-const VERSION = fs.readFileSync(path.join(REPO, 'app/build.gradle.kts'), 'utf8').match(/versionName\s*=\s*"([^"]+)"/)[1];
 
 const O = '#FF7A1A';
 const K = createKit({
   golos: path.join(REPO, 'app/src/main/res/font/golos_text.ttf'),
   mono: path.join(REPO, 'app/src/main/res/font/jetbrains_mono.ttf'),
-  accent: { hi: O, grad: ['#FFB27A', '#FF6A00'], on: '#1F0B00', glow: '#FF6A00', glow2: '#FF375F', btn: ['#FF9A4D', '#F06400'] },
+  accent: { hi: O, grad: ['#FFB27A', '#FF6A00'], on: '#1F0B00', glow: '#FF6A00', glow2: '#FF375F' },
 });
 const { P, T, card, chip, sectionHead, badge, lines, wrap, one, fitSize, fitText, delay, svg } = K;
 const flat = (s) => String(s).replace(/\n/g, ' ');
@@ -37,8 +35,6 @@ const RING = '.ring{transform-box:fill-box;transform-origin:center;animation:rin
 function hero(t) {
   const h = t.hero;
   let b = `<g class="r">${logo(40, 36, 36)}<text x="88" y="62" font-size="24" font-weight="800" letter-spacing="-.4">${T('Budila')}</text></g>`;
-  const v = chip(184, 39, 'v' + VERSION);
-  b += `<g class="r" ${delay(1)}>${v.s}</g>`;
   const ts = fitSize([h.h1, h.h2], 500, 40, 800);
   b += `<g class="r" ${delay(2)}>${lines(40, 146, [one(h.h1), one(h.h2)], { size: ts, weight: 800, lh: 48, spacing: '-1' })}</g>`;
   const sub = wrap(h.sub, 520, 16, 500);
@@ -117,7 +113,7 @@ ${fitText(x + 20, y + 110, sub, cw - 36, { size: 13, weight: 500, fill: P.muted 
   });
   b += `<g class="r" ${delay(4)}>${p}</g>`;
   const sy = y0 + ph + 34;
-  b += `<g class="r" ${delay(5)}>${fitText(40, sy, q.source.replace('{version}', VERSION), 800, { size: 12, weight: 500, mono: true, fill: P.dim })}</g>`;
+  b += `<g class="r" ${delay(5)}>${fitText(40, sy, q.source, 800, { size: 12, weight: 500, mono: true, fill: P.dim })}</g>`;
   return svg(880, sy + 30, `${q.label} — ${q.title}`, b);
 }
 
@@ -187,14 +183,14 @@ const langs = {};
 for (const [code, t] of Object.entries(STR)) {
   langs[code] = () => ({
     [`hero-${code}.svg`]: hero(t),
-    [`cta-${code}.svg`]: K.button(`${t.cta.label} ${t.cta.size}`, ICONS.download, true),
-    [`btn-new-${code}.svg`]: K.button(MD[code].whatsNew, ICONS.spark, false),
+    [`cta-${code}.svg`]: K.button(t.cta.label, ICONS.download, { detail: t.cta.size, primary: true }),
+    [`btn-new-${code}.svg`]: K.button(MD[code].whatsNew, ICONS.changelog),
     [`screens-${code}.svg`]: screens(t),
     [`features-${code}.svg`]: features(t),
     [`quality-${code}.svg`]: quality(t),
   });
 }
-await K.build(OUT, langs, 'Budilav.:–/');
+await K.build(OUT, langs, 'Budila.:–/');
 renderPngs();
 
 // ---------- README на всех языках (тексты — md.json) ----------
@@ -210,7 +206,7 @@ ${sw}
 
 ${pic('hero', code, m.heroAlt)}
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-${code}.svg" height="52" alt="${m.ctaAlt}"></a>&nbsp;&nbsp;<a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-${code}.svg" height="52" alt="${m.whatsNew}"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-${code}.svg" height="52" alt="${m.ctaAlt}"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-${code}.svg" height="52" alt="${m.whatsNew}"></a>
 
 ${m.intro}
 

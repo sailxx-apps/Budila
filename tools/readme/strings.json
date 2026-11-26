@@ -7,7 +7,7 @@
       "ring": "ЗВОНОК · СЕЙЧАС", "alarm": "Работа · Будни", "off": "Выключить", "snooze": "+5 мин",
       "tiles": [["8 тем + свой цвет", "Material You, тон и гамма\nна ваш вкус"], ["Без интернета", "Нет доступа к сети —\nданные только у вас"], ["Без рекламы", "Ни трекеров, ни подписок,\nни регистрации"], ["10 языков", "Русский, English,\nEspañol и ещё 7"]]
     },
-    "cta": { "label": "Скачать APK", "size": "· 1,6 МБ" },
+    "cta": { "label": "Скачать APK", "size": "1,6 МБ" },
     "features": {
       "label": "ЧТО УМЕЕТ", "title": "Всё, что нужно *утром*",
       "items": [
@@ -25,7 +25,7 @@
       "support": ["ПОДДЕРЖКА", "версии Android"], "tests": ["UI-ТЕСТЫ", "проходят · *100%*"],
       "perms": "РАЗРЕШЕНИЯ", "yes": ["Уведомления и экран звонка", "Точное время срабатывания", "Запуск после перезагрузки", "Вибрация"],
       "no": ["Интернет", "Контакты", "Геолокация", "Файлы", "Камера и микрофон", "Аккаунты"],
-      "source": "Данные: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml · версия {version}"
+      "source": "Данные: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml"
     },
     "design": {
       "label": "ДИЗАЙН-КОД", "title": "Material 3 и *Material You*",
@@ -43,7 +43,7 @@
       "ring": "RINGING · NOW", "alarm": "Work · Weekdays", "off": "Dismiss", "snooze": "+5 min",
       "tiles": [["8 themes + custom", "Material You, any hue and palette"], ["No internet", "No network access — data stays with you"], ["No ads", "No trackers, no subscriptions, no sign-up"], ["10 languages", "English, Español, Deutsch and 7 more"]]
     },
-    "cta": { "label": "Download APK", "size": "· 1.6 MB" },
+    "cta": { "label": "Download APK", "size": "1.6 MB" },
     "features": {
       "label": "FEATURES", "title": "Everything you need *in the morning*",
       "items": [
@@ -61,7 +61,7 @@
       "support": ["SUPPORT", "Android versions"], "tests": ["UI TESTS", "passing · *100%*"],
       "perms": "PERMISSIONS", "yes": ["Notifications and the ringing screen", "Exact alarm time", "Start after reboot", "Vibration"],
       "no": ["Internet", "Contacts", "Location", "Files", "Camera and microphone", "Accounts"],
-      "source": "Source: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml · version {version}"
+      "source": "Source: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml"
     },
     "design": {
       "label": "DESIGN CODE", "title": "Material 3 and *Material You*",
@@ -79,7 +79,7 @@
       "ring": "SONANDO · AHORA", "alarm": "Trabajo · Entre semana", "off": "Apagar", "snooze": "+5 min",
       "tiles": [["8 temas + el tuyo", "Material You, tono y gama a tu gusto"], ["Sin internet", "Sin acceso a la red: tus datos son solo tuyos"], ["Sin anuncios", "Sin rastreadores ni suscripciones ni registro"], ["10 idiomas", "Español, English, Deutsch y 7 más"]]
     },
-    "cta": { "label": "Descargar APK", "size": "· 1,6 MB" },
+    "cta": { "label": "Descargar APK", "size": "1,6 MB" },
     "features": {
       "label": "FUNCIONES", "title": "Todo lo que necesitas *por la mañana*",
       "items": [
@@ -97,7 +97,7 @@
       "support": ["COMPATIBILIDAD", "versiones de Android"], "tests": ["PRUEBAS DE UI", "superadas · *100%*"],
       "perms": "PERMISOS", "yes": ["Notificaciones y pantalla de alarma", "Hora exacta de la alarma", "Inicio tras reiniciar", "Vibración"],
       "no": ["Internet", "Contactos", "Ubicación", "Archivos", "Cámara y micrófono", "Cuentas"],
-      "source": "Datos: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml · versión {version}"
+      "source": "Datos: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml"
     },
     "design": {
       "label": "CÓDIGO DE DISEÑO", "title": "Material 3 y *Material You*",
@@ -115,7 +115,7 @@
       "ring": "TOCANDO · AGORA", "alarm": "Trabalho · Dias úteis", "off": "Desligar", "snooze": "+5 min",
       "tiles": [["8 temas + o seu", "Material You, tom e gama do seu jeito"], ["Sem internet", "Sem acesso à rede: seus dados ficam com você"], ["Sem anúncios", "Sem rastreadores, sem assinaturas, sem cadastro"], ["10 idiomas", "Português, English, Español e mais 7"]]
     },
-    "cta": { "label": "Baixar APK", "size": "· 1,6 MB" },
+    "cta": { "label": "Baixar APK", "size": "1,6 MB" },
     "features": {
       "label": "RECURSOS", "title": "Tudo o que você precisa *de manhã*",
       "items": [
@@ -133,7 +133,7 @@
       "support": ["COMPATIBILIDADE", "versões do Android"], "tests": ["TESTES DE UI", "aprovados · *100%*"],
       "perms": "PERMISSÕES", "yes": ["Notificações e tela de alarme", "Horário exato do alarme", "Início após reiniciar", "Vibração"],
       "no": ["Internet", "Contatos", "Localização", "Arquivos", "Câmera e microfone", "Contas"],
-      "source": "Dados: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml · versão {version}"
+      "source": "Dados: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml"
     },
     "design": {
       "label": "CÓDIGO DE DESIGN", "title": "Material 3 e *Material You*",
@@ -151,7 +151,7 @@
       "ring": "KLINGELT · JETZT", "alarm": "Arbeit · Werktags", "off": "Ausschalten", "snooze": "+5 Min.",
       "tiles": [["8 Designs + eigenes", "Material You, Farbton und Palette nach Wahl"], ["Ohne Internet", "Kein Netzzugriff — die Daten bleiben bei dir"], ["Ohne Werbung", "Keine Tracker, kein Abo, keine Registrierung"], ["10 Sprachen", "Deutsch, English, Español und 7 weitere"]]
     },
-    "cta": { "label": "APK herunterladen", "size": "· 1,6 MB" },
+    "cta": { "label": "APK herunterladen", "size": "1,6 MB" },
     "features": {
       "label": "FUNKTIONEN", "title": "Alles, was du *morgens* brauchst",
       "items": [
@@ -169,7 +169,7 @@
       "support": ["UNTERSTÜTZUNG", "Android-Versionen"], "tests": ["UI-TESTS", "bestanden · *100%*"],
       "perms": "BERECHTIGUNGEN", "yes": ["Benachrichtigungen und Weckbildschirm", "Exakte Weckzeit", "Start nach Neustart", "Vibration"],
       "no": ["Internet", "Kontakte", "Standort", "Dateien", "Kamera und Mikrofon", "Konten"],
-      "source": "Quelle: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml · Version {version}"
+      "source": "Quelle: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml"
     },
     "design": {
       "label": "DESIGN-CODE", "title": "Material 3 und *Material You*",
@@ -187,7 +187,7 @@
       "ring": "SONNERIE · MAINTENANT", "alarm": "Travail · En semaine", "off": "Arrêter", "snooze": "+5 min",
       "tiles": [["8 thèmes + le tien", "Material You, teinte et gamme à ton goût"], ["Sans internet", "Aucun accès réseau : tes données restent à toi"], ["Sans pub", "Ni traqueurs, ni abonnement, ni inscription"], ["10 langues", "Français, English, Español et 7 autres"]]
     },
-    "cta": { "label": "Télécharger l’APK", "size": "· 1,6 Mo" },
+    "cta": { "label": "Télécharger l’APK", "size": "1,6 Mo" },
     "features": {
       "label": "FONCTIONNALITÉS", "title": "Tout ce qu’il faut *le matin*",
       "items": [
@@ -205,7 +205,7 @@
       "support": ["COMPATIBILITÉ", "versions d’Android"], "tests": ["TESTS UI", "réussis · *100 %*"],
       "perms": "AUTORISATIONS", "yes": ["Notifications et écran de sonnerie", "Heure exacte de l’alarme", "Démarrage après redémarrage", "Vibration"],
       "no": ["Internet", "Contacts", "Localisation", "Fichiers", "Caméra et micro", "Comptes"],
-      "source": "Données : ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml · version {version}"
+      "source": "Données : ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml"
     },
     "design": {
       "label": "CODE DE DESIGN", "title": "Material 3 et *Material You*",
@@ -223,7 +223,7 @@
       "ring": "SUONA · ORA", "alarm": "Lavoro · Giorni feriali", "off": "Spegni", "snooze": "+5 min",
       "tiles": [["8 temi + il tuo", "Material You, tono e gamma come vuoi"], ["Senza internet", "Nessun accesso alla rete: i dati restano a te"], ["Senza pubblicità", "Zero tracker, abbonamenti o registrazioni"], ["10 lingue", "Italiano, English, Español e altre 7"]]
     },
-    "cta": { "label": "Scarica l’APK", "size": "· 1,6 MB" },
+    "cta": { "label": "Scarica l’APK", "size": "1,6 MB" },
     "features": {
       "label": "FUNZIONI", "title": "Tutto ciò che serve *al mattino*",
       "items": [
@@ -241,7 +241,7 @@
       "support": ["COMPATIBILITÀ", "versioni di Android"], "tests": ["TEST UI", "superati · *100%*"],
       "perms": "PERMESSI", "yes": ["Notifiche e schermata della sveglia", "Orario esatto della sveglia", "Avvio dopo il riavvio", "Vibrazione"],
       "no": ["Internet", "Contatti", "Posizione", "File", "Fotocamera e microfono", "Account"],
-      "source": "Dati: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml · versione {version}"
+      "source": "Dati: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml"
     },
     "design": {
       "label": "CODICE DI DESIGN", "title": "Material 3 e *Material You*",
@@ -259,7 +259,7 @@
       "ring": "ÇALIYOR · ŞİMDİ", "alarm": "İş · Hafta içi", "off": "Kapat", "snooze": "+5 dk",
       "tiles": [["8 tema + seninki", "Material You, ton ve gama dilediğin gibi"], ["İnternet yok", "Ağ erişimi yok — veriler yalnızca sende"], ["Reklam yok", "İzleyici, abonelik ve kayıt yok"], ["10 dil", "Türkçe, English, Español ve 7 dil daha"]]
     },
-    "cta": { "label": "APK'yı indir", "size": "· 1,6 MB" },
+    "cta": { "label": "APK'yı indir", "size": "1,6 MB" },
     "features": {
       "label": "ÖZELLİKLER", "title": "Sabah *ihtiyacın olan* her şey",
       "items": [
@@ -277,7 +277,7 @@
       "support": ["DESTEK", "Android sürümü"], "tests": ["UI TESTLERİ", "geçiyor · *%100*"],
       "perms": "İZİNLER", "yes": ["Bildirimler ve alarm ekranı", "Tam alarm zamanı", "Yeniden başlatmadan sonra açılış", "Titreşim"],
       "no": ["İnternet", "Kişiler", "Konum", "Dosyalar", "Kamera ve mikrofon", "Hesaplar"],
-      "source": "Kaynak: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml · sürüm {version}"
+      "source": "Kaynak: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml"
     },
     "design": {
       "label": "TASARIM KODU", "title": "Material 3 ve *Material You*",
@@ -295,7 +295,7 @@
       "ring": "ДЗВІНОК · ЗАРАЗ", "alarm": "Робота · Будні", "off": "Вимкнути", "snooze": "+5 хв",
       "tiles": [["8 тем + свій колір", "Material You, тон і гама\nна ваш смак"], ["Без інтернету", "Немає доступу до мережі —\nдані лише у вас"], ["Без реклами", "Ні трекерів, ні підписок,\nні реєстрації"], ["10 мов", "Українська, English,\nEspañol і ще 7"]]
     },
-    "cta": { "label": "Завантажити APK", "size": "· 1,6 МБ" },
+    "cta": { "label": "Завантажити APK", "size": "1,6 МБ" },
     "features": {
       "label": "ЩО ВМІЄ", "title": "Усе, що потрібно *зранку*",
       "items": [
@@ -313,7 +313,7 @@
       "support": ["ПІДТРИМКА", "версії Android"], "tests": ["UI-ТЕСТИ", "проходять · *100%*"],
       "perms": "ДОЗВОЛИ", "yes": ["Сповіщення та екран дзвінка", "Точний час спрацювання", "Запуск після перезавантаження", "Вібрація"],
       "no": ["Інтернет", "Контакти", "Геолокація", "Файли", "Камера й мікрофон", "Акаунти"],
-      "source": "Дані: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml · версія {version}"
+      "source": "Дані: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml"
     },
     "design": {
       "label": "ДИЗАЙН-КОД", "title": "Material 3 і *Material You*",
@@ -331,7 +331,7 @@
       "ring": "DZWONI · TERAZ", "alarm": "Praca · Dni robocze", "off": "Wyłącz", "snooze": "+5 min",
       "tiles": [["8 motywów + własny", "Material You, odcień i gama do wyboru"], ["Bez internetu", "Brak dostępu do sieci — dane tylko u ciebie"], ["Bez reklam", "Bez trackerów, subskrypcji i rejestracji"], ["10 języków", "Polski, English, Español i 7 innych"]]
     },
-    "cta": { "label": "Pobierz APK", "size": "· 1,6 MB" },
+    "cta": { "label": "Pobierz APK", "size": "1,6 MB" },
     "features": {
       "label": "FUNKCJE", "title": "Wszystko, czego trzeba *rano*",
       "items": [
@@ -349,7 +349,7 @@
       "support": ["WSPARCIE", "wersje Androida"], "tests": ["TESTY UI", "zaliczone · *100%*"],
       "perms": "UPRAWNIENIA", "yes": ["Powiadomienia i ekran budzika", "Dokładny czas alarmu", "Start po ponownym uruchomieniu", "Wibracje"],
       "no": ["Internet", "Kontakty", "Lokalizacja", "Pliki", "Aparat i mikrofon", "Konta"],
-      "source": "Dane: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml · wersja {version}"
+      "source": "Dane: ./gradlew assembleRelease testDebugUnitTest · AndroidManifest.xml"
     },
     "design": {
       "label": "KOD DESIGNU", "title": "Material 3 i *Material You*",

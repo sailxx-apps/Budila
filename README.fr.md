@@ -6,7 +6,7 @@
 
 <picture><source srcset="assets/readme/hero-fr.svg"><img src="assets/readme/png/hero-fr.png" width="100%" alt="Budila — Réveille-toi à l’heure. Lève-toi en douceur."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-fr.svg" height="52" alt="Télécharger l’APK"></a>&nbsp;&nbsp;<a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-fr.svg" height="52" alt="Nouveautés"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-fr.svg" height="52" alt="Télécharger l’APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-fr.svg" height="52" alt="Nouveautés"></a>
 
 **Budila est un réveil pour Android qui vous réveille à l’heure, sans stress.** Réveil en douceur, étiquettes et couleurs, le design maison « Instrument » et 8 thèmes Material You. Sans accès à Internet, sans publicité ni traceurs.
 

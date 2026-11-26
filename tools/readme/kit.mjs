@@ -11,7 +11,7 @@ export const plain = (s) => String(s).replace(/\*/g, '');
 
 /**
  * accent: { hi — основной цвет, grad — [от, до] для акцентного текста, on — текст на акцентной заливке,
- *           glow — цвет большого свечения, glow2 — второго, btn — [верх, низ] основной кнопки }
+ *           glow — цвет большого свечения, glow2 — второго }
  */
 export function createKit({ golos, mono, accent }) {
   const A = accent;
@@ -175,17 +175,24 @@ ${fontCss(fg, fm)}
     `<rect x="${x}" y="${y}" width="${size}" height="${size}" rx="11" fill="${A.hi}" fill-opacity=".12" stroke="${A.hi}" stroke-opacity=".28"/>` +
     `<g transform="translate(${x + (size - 24) / 2} ${y + (size - 24) / 2})" fill="none" stroke="${A.hi}" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${paths}</g>`;
 
-  /** Кнопка 52 px: основная — заливка акцентом, вторая — тёмная. icon(color) → разметка в квадрате 24×24 со сдвигом 18,14. */
-  function button(label, icon, primary) {
+  /** Клавиша с отдельным гнездом для иконки 24×24. */
+  function button(label, icon, { detail = '', primary = false } = {}) {
+    const w = 62 + Math.ceil(Math.max(width(label, 14, 700), width(detail, 11, 600)));
+    const name = detail ? `${label}, ${detail}` : label;
+    const ink = primary ? A.on : P.ink;
+    const surface = primary ? A.hi : '#222222';
+    const edge = primary ? '#291307' : '#555555';
+    const well = primary ? '#361806' : '#101010';
     return (fg) => {
-      const w = Math.round(50 + width(label, 15, 700) + 24);
-      const ink = primary ? A.on : '#FFFFFF';
-      return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="52" viewBox="0 0 ${w} 52" role="img" aria-label="${esc(label)}">
+      const sublabel = detail ? `<text x="48" y="38" font-size="11" font-weight="600" fill="${ink}">${T(detail)}</text>` : '';
+      return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="52" viewBox="0 0 ${w} 52" role="img" aria-label="${esc(name)}">
 <style>@font-face{font-family:"G";src:url(data:font/woff2;base64,${fg}) format("woff2");font-weight:100 900}text{font-family:"G","Segoe UI",system-ui,sans-serif}</style>
-<defs><linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${primary ? A.btn[0] : '#202020'}"/><stop offset="1" stop-color="${primary ? A.btn[1] : '#101010'}"/></linearGradient></defs>
-<rect x=".5" y=".5" width="${w - 1}" height="51" rx="14" fill="url(#b)" stroke="${primary ? A.btn[0] : '#333'}"/>
-<g transform="translate(18 14)" fill="none" stroke="${ink}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${icon}</g>
-<text x="50" y="32" font-size="15" font-weight="700" fill="${ink}">${T(label)}</text>
+<rect x=".5" y=".5" width="${w - 1}" height="51" rx="12" fill="${edge}"/>
+<rect x="1.5" y="1.5" width="${w - 3}" height="46" rx="10" fill="${surface}"/>
+<rect x="8" y="8" width="33" height="33" rx="7" fill="${well}"/>
+<g transform="translate(12.5 12.5)" fill="none" stroke="${A.hi}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${icon}</g>
+<text x="48" y="${detail ? 23 : 30}" font-size="14" font-weight="700" fill="${ink}">${T(label)}</text>
+${sublabel}
 </svg>
 `;
     };
@@ -219,6 +226,7 @@ ${fontCss(fg, fm)}
 export const ICONS = {
   android: '<path d="M7 10.5a5 5 0 0 1 10 0v.5H7z"/><path d="M8.6 6.6 7.4 4.8M15.4 6.6l1.2-1.8"/><rect x="7" y="12.5" width="10" height="7" rx="1.6"/>',
   spark: '<path d="M12 4l1.8 4.6L18.5 10l-4.7 1.4L12 16l-1.8-4.6L5.5 10l4.7-1.4z"/>',
+  changelog: '<rect x="5" y="4" width="14" height="16" rx="2"/><path d="M9 9h6m-6 3h6m-6 3h4"/>',
   download: '<path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/>',
   web: '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.4 3.8 5.2 3.8 8.5s-1.2 6.1-3.8 8.5c-2.6-2.4-3.8-5.2-3.8-8.5s1.2-6.1 3.8-8.5z"/>',
   send: '<path d="M20.5 4 3.5 11l6.5 2.5L12.5 20z"/><path d="M10 13.5 20.5 4"/>',
