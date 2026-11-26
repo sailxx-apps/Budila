@@ -4,9 +4,9 @@
 
 <br>
 
-<picture><source srcset="assets/readme/hero-uk.svg?v=b8c1e2cb5a14"><img src="assets/readme/png/hero-uk.png" width="100%" alt="Budila — Прокидайся вчасно. Вставай легко."></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/hero-uk.svg?v=b8c1e2cb5a14"><img src="assets/readme/png/hero-uk.png" width="100%" alt="Budila — Прокидайся вчасно. Вставай легко."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-uk.svg?v=88c03046a3cd" height="52" alt="Завантажити APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-uk.svg?v=5e4ff8a631a2" height="52" alt="Що нового"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/cta-uk.svg?v=88c03046a3cd" height="52" alt="Завантажити APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/btn-new-uk.svg?v=5e4ff8a631a2" height="52" alt="Що нового"></a>
 
 **Budila — будильник для Android, який будить вчасно і без стресу.** Спокійне пробудження, теги й кольори, фірмовий дизайн «Інструмент» і 8 тем Material You. Працює без інтернету, без реклами й трекерів.
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="assets/readme/screens-uk.svg?v=8ed18b90eed6"><img src="assets/readme/png/screens-uk.png" width="100%" alt="Екрани Budila: теги й кольори, своя тема, дзвінок, темна тема"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/screens-uk.svg?v=8ed18b90eed6"><img src="assets/readme/png/screens-uk.png" width="100%" alt="Екрани Budila: теги й кольори, своя тема, дзвінок, темна тема"></picture>
 
 <br>
 
-<picture><source srcset="assets/readme/features-uk.svg?v=6be1d1ccb0aa"><img src="assets/readme/png/features-uk.png" width="100%" alt="Що вміє Budila"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/features-uk.svg?v=6be1d1ccb0aa"><img src="assets/readme/png/features-uk.png" width="100%" alt="Що вміє Budila"></picture>
 
 <details>
 <summary><b>Докладніше про можливості</b></summary>
@@ -59,7 +59,7 @@
 
 <br>
 
-<picture><source srcset="assets/readme/quality-uk.svg?v=9afdc8883adc"><img src="assets/readme/png/quality-uk.png" width="100%" alt="Якість у цифрах"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/quality-uk.svg?v=9afdc8883adc"><img src="assets/readme/png/quality-uk.png" width="100%" alt="Якість у цифрах"></picture>
 
 <details>
 <summary><b>Встановлення</b></summary>

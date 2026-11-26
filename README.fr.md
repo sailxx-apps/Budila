@@ -4,9 +4,9 @@
 
 <br>
 
-<picture><source srcset="assets/readme/hero-fr.svg?v=168be45204d8"><img src="assets/readme/png/hero-fr.png" width="100%" alt="Budila — Réveille-toi à l’heure. Lève-toi en douceur."></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/hero-fr.svg?v=168be45204d8"><img src="assets/readme/png/hero-fr.png" width="100%" alt="Budila — Réveille-toi à l’heure. Lève-toi en douceur."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-fr.svg?v=841ff40680ff" height="52" alt="Télécharger l’APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-fr.svg?v=7416b1b6896a" height="52" alt="Nouveautés"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/cta-fr.svg?v=841ff40680ff" height="52" alt="Télécharger l’APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/btn-new-fr.svg?v=7416b1b6896a" height="52" alt="Nouveautés"></a>
 
 **Budila est un réveil pour Android qui vous réveille à l’heure, sans stress.** Réveil en douceur, étiquettes et couleurs, le design maison « Instrument » et 8 thèmes Material You. Sans accès à Internet, sans publicité ni traceurs.
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="assets/readme/screens-fr.svg?v=b09cb3f0ebc3"><img src="assets/readme/png/screens-fr.png" width="100%" alt="Écrans de Budila : étiquettes et couleurs, thème perso, sonnerie, thème sombre"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/screens-fr.svg?v=b09cb3f0ebc3"><img src="assets/readme/png/screens-fr.png" width="100%" alt="Écrans de Budila : étiquettes et couleurs, thème perso, sonnerie, thème sombre"></picture>
 
 <br>
 
-<picture><source srcset="assets/readme/features-fr.svg?v=2b69bae7ddd3"><img src="assets/readme/png/features-fr.png" width="100%" alt="Ce que sait faire Budila"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/features-fr.svg?v=2b69bae7ddd3"><img src="assets/readme/png/features-fr.png" width="100%" alt="Ce que sait faire Budila"></picture>
 
 <details>
 <summary><b>En savoir plus sur les fonctionnalités</b></summary>
@@ -59,7 +59,7 @@ Les alarmes passent par l’`AlarmClock` du système et sonnent à l’heure mê
 
 <br>
 
-<picture><source srcset="assets/readme/quality-fr.svg?v=33d97f12c5f2"><img src="assets/readme/png/quality-fr.png" width="100%" alt="La qualité en chiffres"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/quality-fr.svg?v=33d97f12c5f2"><img src="assets/readme/png/quality-fr.png" width="100%" alt="La qualité en chiffres"></picture>
 
 <details>
 <summary><b>Installation</b></summary>

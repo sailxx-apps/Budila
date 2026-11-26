@@ -4,9 +4,9 @@
 
 <br>
 
-<picture><source srcset="assets/readme/hero-pl.svg?v=73c0bf568e27"><img src="assets/readme/png/hero-pl.png" width="100%" alt="Budila — Budź się na czas. Wstawaj z łatwością."></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/hero-pl.svg?v=73c0bf568e27"><img src="assets/readme/png/hero-pl.png" width="100%" alt="Budila — Budź się na czas. Wstawaj z łatwością."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-pl.svg?v=3e74212f8fe5" height="52" alt="Pobierz APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-pl.svg?v=c70fcabc2016" height="52" alt="Co nowego"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/cta-pl.svg?v=3e74212f8fe5" height="52" alt="Pobierz APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/btn-new-pl.svg?v=c70fcabc2016" height="52" alt="Co nowego"></a>
 
 **Budila to budzik na Androida, który budzi punktualnie i bez stresu.** Łagodne budzenie, tagi i kolory, autorski wygląd „Instrument” i 8 motywów Material You. Bez dostępu do internetu, bez reklam i trackerów.
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="assets/readme/screens-pl.svg?v=92ee91ced247"><img src="assets/readme/png/screens-pl.png" width="100%" alt="Ekrany Budila: tagi i kolory, własny motyw, dzwoniący budzik, ciemny motyw"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/screens-pl.svg?v=92ee91ced247"><img src="assets/readme/png/screens-pl.png" width="100%" alt="Ekrany Budila: tagi i kolory, własny motyw, dzwoniący budzik, ciemny motyw"></picture>
 
 <br>
 
-<picture><source srcset="assets/readme/features-pl.svg?v=bfa4af5697c4"><img src="assets/readme/png/features-pl.png" width="100%" alt="Co potrafi Budila"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/features-pl.svg?v=bfa4af5697c4"><img src="assets/readme/png/features-pl.png" width="100%" alt="Co potrafi Budila"></picture>
 
 <details>
 <summary><b>Więcej o funkcjach</b></summary>
@@ -59,7 +59,7 @@ Budziki są ustawiane przez systemowy `AlarmClock` i dzwonią punktualnie, nawet
 
 <br>
 
-<picture><source srcset="assets/readme/quality-pl.svg?v=ba5cd2eb4c97"><img src="assets/readme/png/quality-pl.png" width="100%" alt="Jakość w liczbach"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/quality-pl.svg?v=ba5cd2eb4c97"><img src="assets/readme/png/quality-pl.png" width="100%" alt="Jakość w liczbach"></picture>
 
 <details>
 <summary><b>Instalacja</b></summary>

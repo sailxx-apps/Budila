@@ -198,7 +198,8 @@ renderPngs();
 function svgUrl(name, code) {
   const file = `${name}-${code}.svg`;
   const hash = createHash('sha256').update(fs.readFileSync(path.join(OUT, file))).digest('hex').slice(0, 12);
-  return `assets/readme/${file}?v=${hash}`;
+  // GitHub отбрасывает query-параметры при перенаправлении относительных ссылок на raw.
+  return `https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/${file}?v=${hash}`;
 }
 const pic = (name, code, alt) => `<picture><source srcset="${svgUrl(name, code)}"><img src="assets/readme/png/${name}-${code}.png" width="100%" alt="${alt}"></picture>`;
 const det = (summary, body) => `<details>\n<summary><b>${summary}</b></summary>\n\n${body}\n\n</details>`;

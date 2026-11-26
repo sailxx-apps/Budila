@@ -4,9 +4,9 @@
 
 <br>
 
-<picture><source srcset="assets/readme/hero-de.svg?v=e659e343d339"><img src="assets/readme/png/hero-de.png" width="100%" alt="Budila — Pünktlich aufwachen. Leicht aufstehen."></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/hero-de.svg?v=e659e343d339"><img src="assets/readme/png/hero-de.png" width="100%" alt="Budila — Pünktlich aufwachen. Leicht aufstehen."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-de.svg?v=397525edf3b1" height="52" alt="APK herunterladen"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-de.svg?v=d88939cc65c5" height="52" alt="Neuigkeiten"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/cta-de.svg?v=397525edf3b1" height="52" alt="APK herunterladen"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/btn-new-de.svg?v=d88939cc65c5" height="52" alt="Neuigkeiten"></a>
 
 **Budila ist ein Wecker für Android, der dich pünktlich und ohne Stress weckt.** Sanftes Wecken, Tags und Farben, das eigene Design „Instrument“ und 8 Material-You-Themes. Kein Internetzugriff, keine Werbung, keine Tracker.
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="assets/readme/screens-de.svg?v=c9d7df758a40"><img src="assets/readme/png/screens-de.png" width="100%" alt="Budila-Bildschirme: Tags und Farben, eigenes Design, Weckruf, dunkles Design"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/screens-de.svg?v=c9d7df758a40"><img src="assets/readme/png/screens-de.png" width="100%" alt="Budila-Bildschirme: Tags und Farben, eigenes Design, Weckruf, dunkles Design"></picture>
 
 <br>
 
-<picture><source srcset="assets/readme/features-de.svg?v=5d0e13510738"><img src="assets/readme/png/features-de.png" width="100%" alt="Was Budila kann"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/features-de.svg?v=5d0e13510738"><img src="assets/readme/png/features-de.png" width="100%" alt="Was Budila kann"></picture>
 
 <details>
 <summary><b>Mehr zu den Funktionen</b></summary>
@@ -59,7 +59,7 @@ Wecker werden über den System-`AlarmClock` gestellt und klingeln pünktlich, au
 
 <br>
 
-<picture><source srcset="assets/readme/quality-de.svg?v=e769ce598812"><img src="assets/readme/png/quality-de.png" width="100%" alt="Qualität in Zahlen"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/quality-de.svg?v=e769ce598812"><img src="assets/readme/png/quality-de.png" width="100%" alt="Qualität in Zahlen"></picture>
 
 <details>
 <summary><b>Installation</b></summary>

@@ -4,9 +4,9 @@
 
 <br>
 
-<picture><source srcset="assets/readme/hero-en.svg?v=8026fb4fa174"><img src="assets/readme/png/hero-en.png" width="100%" alt="Budila — Wake up on time. Get up with ease."></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/hero-en.svg?v=8026fb4fa174"><img src="assets/readme/png/hero-en.png" width="100%" alt="Budila — Wake up on time. Get up with ease."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-en.svg?v=1ddea4184edc" height="52" alt="Download APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-en.svg?v=fd15aaf162a6" height="52" alt="What’s new"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/cta-en.svg?v=1ddea4184edc" height="52" alt="Download APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/btn-new-en.svg?v=fd15aaf162a6" height="52" alt="What’s new"></a>
 
 **Budila is an Android alarm clock that wakes you on time, without the stress.** Gentle wake-up, tags and colors, the signature “Instrument” design and 8 Material You themes. No internet access, no ads, no trackers.
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="assets/readme/screens-en.svg?v=243e71ddc73d"><img src="assets/readme/png/screens-en.png" width="100%" alt="Budila screens: tags and colors, custom theme, ringing, dark theme"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/screens-en.svg?v=243e71ddc73d"><img src="assets/readme/png/screens-en.png" width="100%" alt="Budila screens: tags and colors, custom theme, ringing, dark theme"></picture>
 
 <br>
 
-<picture><source srcset="assets/readme/features-en.svg?v=8851a3a2ef8d"><img src="assets/readme/png/features-en.png" width="100%" alt="What Budila can do"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/features-en.svg?v=8851a3a2ef8d"><img src="assets/readme/png/features-en.png" width="100%" alt="What Budila can do"></picture>
 
 <details>
 <summary><b>More about the features</b></summary>
@@ -59,7 +59,7 @@ Alarms are set through the system `AlarmClock` and ring on time even when the ph
 
 <br>
 
-<picture><source srcset="assets/readme/quality-en.svg?v=92b37dfdeef2"><img src="assets/readme/png/quality-en.png" width="100%" alt="Quality in numbers"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/quality-en.svg?v=92b37dfdeef2"><img src="assets/readme/png/quality-en.png" width="100%" alt="Quality in numbers"></picture>
 
 <details>
 <summary><b>Install</b></summary>

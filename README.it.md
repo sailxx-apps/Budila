@@ -4,9 +4,9 @@
 
 <br>
 
-<picture><source srcset="assets/readme/hero-it.svg?v=21c29ef69f89"><img src="assets/readme/png/hero-it.png" width="100%" alt="Budila — Svegliati in orario. Alzati senza fatica."></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/hero-it.svg?v=21c29ef69f89"><img src="assets/readme/png/hero-it.png" width="100%" alt="Budila — Svegliati in orario. Alzati senza fatica."></picture>
 
-<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="assets/readme/cta-it.svg?v=4a9d08d6b2c9" height="52" alt="Scarica l’APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="assets/readme/btn-new-it.svg?v=cfb88c02f37e" height="52" alt="Novità"></a>
+<a href="https://github.com/sailxx/Budila/releases/latest/download/Budila.apk"><img src="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/cta-it.svg?v=4a9d08d6b2c9" height="52" alt="Scarica l’APK"></a> <a href="https://github.com/sailxx/Budila/releases/latest"><img src="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/btn-new-it.svg?v=cfb88c02f37e" height="52" alt="Novità"></a>
 
 **Budila è una sveglia per Android che ti sveglia in orario, senza stress.** Risveglio dolce, tag e colori, il design esclusivo «Strumento» e 8 temi Material You. Nessun accesso a internet, niente pubblicità né tracker.
 
@@ -14,11 +14,11 @@
 
 <br>
 
-<picture><source srcset="assets/readme/screens-it.svg?v=c10c8fb1d1a3"><img src="assets/readme/png/screens-it.png" width="100%" alt="Schermate di Budila: tag e colori, tema personale, sveglia che suona, tema scuro"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/screens-it.svg?v=c10c8fb1d1a3"><img src="assets/readme/png/screens-it.png" width="100%" alt="Schermate di Budila: tag e colori, tema personale, sveglia che suona, tema scuro"></picture>
 
 <br>
 
-<picture><source srcset="assets/readme/features-it.svg?v=d84ff99d794e"><img src="assets/readme/png/features-it.png" width="100%" alt="Cosa sa fare Budila"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/features-it.svg?v=d84ff99d794e"><img src="assets/readme/png/features-it.png" width="100%" alt="Cosa sa fare Budila"></picture>
 
 <details>
 <summary><b>Di più sulle funzioni</b></summary>
@@ -59,7 +59,7 @@ Le sveglie passano per l’`AlarmClock` di sistema e suonano puntuali anche quan
 
 <br>
 
-<picture><source srcset="assets/readme/quality-it.svg?v=b500c11b6f95"><img src="assets/readme/png/quality-it.png" width="100%" alt="La qualità in numeri"></picture>
+<picture><source srcset="https://raw.githubusercontent.com/sailxx/Budila/main/assets/readme/quality-it.svg?v=b500c11b6f95"><img src="assets/readme/png/quality-it.png" width="100%" alt="La qualità in numeri"></picture>
 
 <details>
 <summary><b>Installazione</b></summary>
